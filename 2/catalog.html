@@ -2,6 +2,8 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Academy: Седона</title>
     <base href="https://htmlacademy-adaptive.github.io/2123945-sedona-27/2/">
 </head>
@@ -9,6 +11,7 @@
   <body class="page_body">
 
 <!--HEADER-->
+<a></a>
     <header class="main-header">
       <a class="main-header__logo" href="index.html">
         <img class="main-header__logo-img" src="img/header-logo.svg" width="185" height="96" alt="Логотип Седона.">
@@ -34,18 +37,15 @@
 
   <h1 class="visually-hidden">седона: каталог</h1>
 
-  <div class="hero-catalog__wrapper">
-
-    <section class="hero-catalog">
-      <h2 class="visually-hidden">добро пожаловать в седону</h2>
-      <img class="hero-catalog__img" src="img/back-text.png" width="229" height="39" style="background-color: rgba(84, 150, 189, 1);" alt="welcome to the gorgeous sedona! because the grand canyon sucks!">
-    </section>
-
-    <section class="hero-catalog-description">
-      <h2 class="hero-catalog-description__title">фото и видео</h2>
-      <p class="hero-catalog-description__text">не можете решиться на путешествие <br> из-за курса? фотографии помогут вам <br>забыть о политике и экономике.</p>
-    </section>
-
+  <section class="hero-catalog">
+    <h2 class="visually-hidden">добро пожаловать в седону</h2>
+    <img class="hero-catalog__img" src="img/back-text.png" width="229" height="39" style="background-color: rgba(84, 150, 189, 1);" alt="welcome to the gorgeous sedona! because the grand canyon sucks!">
+  </section>
+  <div class="hero-catalog-description__wrapper">
+  <section class="hero-catalog-description">
+    <h2 class="hero-catalog-description__title">фото и видео</h2>
+    <p class="hero-catalog-description__text">не можете решиться на путешествие <br> из-за курса? фотографии помогут вам <br>забыть о политике и экономике.</p>
+  </section>
   </div>
 
   <section class="gallery">
@@ -56,7 +56,7 @@
 
         <li class="gallery__item">
           <a href="#">
-            <img class="gallery_img-1" src="img/photo-1.jpg" width="280" height="280" alt="вид на дорогу в седоне.">
+            <img class="gallery__img--1" src="img/photo-1.jpg" width="280" height="280" alt="вид на дорогу в седоне.">
           </a>
           <h3 class="gallery__title">неродные просторы</h3>
           <p class="gallery__text">Автор фото: Бориc</p>
@@ -68,7 +68,7 @@
 
          <li class="gallery__item">
           <a href="#">
-            <img class="gallery_img-2" src="img/photo-2.jpg" width="280" height="280" alt="вид на растения в седоне.">
+            <img class="gallery__img--2" src="img/photo-2.jpg" width="280" height="280" alt="вид на растения в седоне.">
           </a>
           <h3 class="gallery__title">местная растительность</h3>
           <p class="gallery__text">Автор фото: Сергей</p>
@@ -80,7 +80,7 @@
 
          <li class="gallery__item">
           <a href="#">
-            <img class="gallery_img-3" src="img/photo-3.jpg" width="280" height="280" alt="вид на дорогу в седоне.">
+            <img class="gallery__img--3" src="img/photo-3.jpg" width="280" height="280" alt="вид на дорогу в седоне.">
           </a>
           <h3 class="gallery__title">дорога на север</h3>
           <p class="gallery__text">Автор фото: Петр</p>
@@ -92,7 +92,7 @@
 
          <li class="gallery__item">
           <a href="#">
-            <img class="gallery_img-4" src="img/photo-4.jpg" width="280" height="280" alt="вид на дорогу в седоне.">
+            <img class="gallery__img--4" src="img/photo-4.jpg" width="280" height="280" alt="вид на дорогу в седоне.">
           </a>
           <h3 class="gallery__title">мост дьявола</h3>
           <p class="gallery__text">Автор фото: Антон</p>
@@ -115,7 +115,7 @@
 <!--FOOTER-->
 <footer class="main-footer">
   <div class="main-footer__wrapper">
-    <h3 class="main-footer__title">#visitsedona</h3>
+    <h2 class="main-footer__title">#visitsedona</h2>
 
     <section class="main-footer__social social">
       <h3 class="visually-hidden">социальные сети</h3>
