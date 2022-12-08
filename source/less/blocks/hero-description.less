@@ -1,7 +1,36 @@
-.hero-description {}
+.hero-description {
+  text-align: center;
+  box-sizing: border-box;
+}
 
-.hero-description__wrapper {}
+.hero-description::before {
+  content: "";
+  background-image: url(".../img/intro-triangle.svg");
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 57px;
+}
 
-.hero-description__title {}
+.hero-description__wrapper {
+}
 
-.hero-description__text {}
+.hero-description__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  padding-top: 32px;
+}
+
+.hero-description__text {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  margin-top: 35px;
+  margin-bottom: 16px;
+}
