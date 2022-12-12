@@ -1,0 +1,103 @@
+/*ОБЩИЕ СТИЛИ*/
+
+.advantages {
+  display: block;
+}
+
+.advantages__wrapper {
+  min-width: 284px;
+}
+
+.advantages__item {
+  width: auto;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 1);
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+/*С ГОЛУБЫМ ФОНОМ*/
+.advantages__item--color-blue {
+  background-color: rgba(129, 179, 210, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 54px;
+  padding-bottom: 40px;
+
+  .advantages__title {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .advantages__text {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .advantages__number {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+/*С ИКОНКАМИ*/
+.advantages__item--icon {
+  text-align: start;
+  background-color: rgba(255, 255, 255, 1);
+
+  .advantages__title {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    padding-left: 47px;
+    padding-bottom: 16px;
+  }
+
+  .advantages__text {
+    padding-left: 47px;
+  }
+
+  .advantages__item--house {
+    background-image: url(".../img/advantages-house.svg");
+    background-repeat: no-repeat;
+  }
+
+  .advantages__item--food {
+    background-image: url("/source/img/advantages-food.svg");
+    background-repeat: no-repeat;
+  }
+
+  .advantages__item--souvenirs {
+    background-image: url("/source/img/advantages-souvenirs.svg");
+    background-repeat: no-repeat;
+    margin-bottom: 46px;
+  }
+}
+
+/*НА СЕРОМ ФОНЕ*/
+.advantages__item--with-color-grey {
+  background-color: #eeeeee;
+  display: flex;
+  flex-direction: column;
+  min-height: 117px;
+
+  .advantages__title {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+  }
+
+  .advantages__number,
+  .advantages__text {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+  }
+}
