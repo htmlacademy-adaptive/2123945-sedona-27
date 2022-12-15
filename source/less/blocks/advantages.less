@@ -13,7 +13,6 @@
   text-align: center;
   background-color: rgba(255, 255, 255, 1);
   padding-top: 25px;
-  padding-bottom: 25px;
 }
 
 /*С ГОЛУБЫМ ФОНОМ*/
@@ -30,6 +29,7 @@
     line-height: 26px;
     font-weight: 700;
     color: rgba(255, 255, 255, 1);
+    padding-bottom: 11px;
   }
 
   .advantages__text {
@@ -37,6 +37,7 @@
     line-height: 21px;
     font-weight: 400;
     color: rgba(255, 255, 255, 1);
+    padding-top: 17px;
   }
 
   .advantages__number {
@@ -58,6 +59,7 @@
     font-weight: 700;
     padding-left: 47px;
     padding-bottom: 16px;
+    padding-top: 8px;
   }
 
   .advantages__text {
@@ -81,12 +83,19 @@
   }
 }
 
+.advantages__item--icon:last-child {
+    margin-bottom: 47px;
+}
+
 /*НА СЕРОМ ФОНЕ*/
 .advantages__item--with-color-grey {
   background-color: #eeeeee;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   min-height: 117px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 
   .advantages__title {
     font-size: 18px;
