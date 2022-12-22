@@ -1,15 +1,132 @@
 .form {
-
-}
-
-.form__form-name {
 display: flex;
 flex-direction: column;
 }
+
+  .form__wrapper {
+    width: 280px;
+    margin: 0 auto;
+  }
+
+.form__form-name {
+  display: flex;
+  flex-direction: column;
+  margin-top: 53px;
+  margin-bottom: 64px;
+}
+
+.form__form-contacts {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 59px;
+}
+
+  .form-phone__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+    .form-phone__img {
+      display: block;
+      width: 18px;
+      height: 18px;
+      box-sizing: border-box;
+      padding: 16px;
+      background-color: rgba(230, 230, 230, 1);
+    }
+
+  .form-email__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .form-email__img {
+    padding: 16px;
+    background-color: rgba(230, 230, 230, 1);
+    display: block;
+    width: 18px;
+    height: 18px;
+    box-sizing: border-box;
+  }
+
+.form__form-impression {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 49px;
+}
+
+.form__form-attractions {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 49px;
+}
+
+.form__form-emotions {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 56px;
+}
+
+.form__form-emotions textarea {
+    min-height: 150px;
+    background-color: rgba(242, 242, 242, 1);
+    color: rgba(0, 0, 0, 0.3);
+    padding: 16px;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    border: none;
+  }
+
+  .form-emotions__text {
+    color: rgba(51, 51, 51, 0.6);
+    margin-left: auto;
+    margin-top: 3px;
+  }
 
 .form__title {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   text-align: center;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 20px;
 }
+
+.field {
+  padding: 16px;
+  padding-right: 0;
+  margin-bottom: 16px;
+  background-color: rgba(242, 242, 242, 1);
+  border: none;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  box-sizing: border-box;
+}
+
+  .field:last-child {
+    margin-bottom: 0;
+  }
+
+  .field:hover,
+  .field:focus {
+    background-color: rgba(229, 229, 229, 1);
+    color: #000000;
+  }
+
+  .field:active {
+    background-color: rgba(255, 255, 255, 1);
+    outline: 4px solid rgba(229, 229, 229, 1);
+    color: #000000;
+  }
+
+.form__button {
+  min-height: 59px;
+  box-sizing: border-box;
+}
+
