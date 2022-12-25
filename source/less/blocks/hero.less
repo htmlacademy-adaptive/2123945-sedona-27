@@ -1,9 +1,22 @@
 .hero {
   min-height: 389px;
   background-image: url("../img/back-mobile.jpg");
+  background-repeat: no-repeat;
 }
 
 .hero__img {
     padding-top: 90px;
     padding-left: 19px;
+}
+
+@media (min-width: @tablet-width) {
+  .hero {
+    width: @tablet-width;
+    background-image: url("../img/back-tablet.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .hero__img {
+    padding: 77px 154px 91px 153px;
+  }
 }
