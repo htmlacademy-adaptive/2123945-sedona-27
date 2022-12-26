@@ -3,6 +3,21 @@
   box-sizing: border-box;
   margin-top: 32px;
   margin-bottom: 32px;
+  width: 284px;
+  padding-left: 18px;
+  padding-right: 18px;
+
+  @media (min-width: @tablet-width) {
+    width: 520px;
+    padding-left: 124px;
+    padding-right: 124px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 484px;
+    padding-left: 357px;
+    padding-right: 359px;
+  }
 }
 
 .hero-description::before {
@@ -20,6 +35,9 @@
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+  padding-left: 18px;
+  padding-right: 18px;
+  width: 284px;
 }
 
 .hero-description__text {

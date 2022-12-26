@@ -6,6 +6,15 @@
 
 .advantages__wrapper {
   min-width: 284px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 1200px;
+    background-color: #000000;
+  }
 }
 
 .advantages__item {
@@ -84,7 +93,7 @@
 }
 
 .advantages__item--icon:last-child {
-    margin-bottom: 47px;
+  margin-bottom: 47px;
 }
 
 /*НА СЕРОМ ФОНЕ*/
