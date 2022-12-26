@@ -55,15 +55,15 @@
   padding-left: 47px;
 }
 .advantages__item--icon .advantages__item--house {
-  background-image: url("../img/advantages-house.svg");
+  background-image: url("img/advantages-house.svg");
   background-repeat: no-repeat;
 }
 .advantages__item--icon .advantages__item--food {
-  background-image: url("../img/advantages-food.svg");
+  background-image: url("img/advantages-food.svg");
   background-repeat: no-repeat;
 }
 .advantages__item--icon .advantages__item--souvenirs {
-  background-image: url("/source/img/advantages-souvenirs.svg");
+  background-image: url("img/advantages-souvenirs.svg");
   background-repeat: no-repeat;
   margin-bottom: 46px;
 }
@@ -192,7 +192,7 @@
   padding-bottom: 33px;
   text-align: center;
   margin: 0;
-  font-size: 55px;
+  font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   font-family: "PT Sans", sans-serif;
