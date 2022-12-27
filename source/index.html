@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.5">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Седона</title>
@@ -57,55 +57,63 @@
         <h2 class="visually-hidden">преимущества седоны</h2>
 
         <div class="advantages__wrapper">
-          <ul class="advantages__list">
+          <div class="advantages__list">
 
-            <li class="advantages__item advantages__item--color-blue">
+          <div class="advantages__wrapper--line-1">
+            <div class="advantages__item advantages__item--color-blue">
               <h3 class="advantages__title">настоящий городок</h3>
               <span class="advantages__number">№1</span>
               <p class="advantages__text">седона на аттракцион для туристов, там течет своя жизнь</p>
-            </li>
-                <img srс="img/true-city-png.png" width="520" height="260" alt="вид на улицы седоны.">
-            <li class="advantages__item advantages__item--icon advantages__item--house">
+            </div>
+              <img class="advantages__img" srс="../img/true-city-png.png" width="520" height="260" alt="вид на улицы седоны.">
+          </div>
+
+          <div class="advantages__wrapper--line-2">
+            <div class="advantages__item advantages__item--icon advantages__item--house">
               <h3 class="advantages__title">жилье</h3>
               <p class="advantages__text">рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-            </li>
+            </div>
 
-            <li class="advantages__item advantages__item--icon advantages__item--food">
+            <div class="advantages__item advantages__item--icon advantages__item--food">
               <h3 class="advantages__title">еда</h3>
               <p class="advantages__text">всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-            </li>
+            </div>
 
-            <li class="advantages__item advantages__item--icon advantages__item--souvenirs">
+            <div class="advantages__item advantages__item--icon advantages__item--souvenirs">
               <h3 class="advantages__title">сувениры</h3>
               <p class="advantages__text">не только китайского, но и местного производства!</p>
-            </li>
+            </div>
+          </div>
 
-            <li class="advantages__item advantages__item--color-blue">
+          <div class="advantages__wrapper--line-3">
+            <div class="advantages__item advantages__item--color-blue">
               <h3 class="advantages__title">там есть мост дьявола</h3>
               <span class="advantages__number">№2</span>
               <p class="advantages__text">да, по нему можно пройти! если вы осмелитесь, конечно</p>
-            </li>
+            </div>
                  <img srс="img/devils-bridge.jpg" width="520" height="260" alt="вид каньон седоны.">
+          </div>
 
-            <li class="advantages__item advantages__item--with-color-grey">
+          <div class="advantages__wrapper--line-4">
+            <div class="advantages__item advantages__item--with-color-grey">
               <h3 class="advantages__title">небольшая площадь</h3>
               <span class="advantages__number">№3</span>
               <p class="advantages__text">все интересные места находятся очень близко</p>
-            </li>
+            </div>
 
-            <li class="advantages__item advantages__item--with-color-grey">
+            <div class="advantages__item advantages__item--with-color-grey">
               <h3 class="advantages__title">красивая дорога</h3>
               <span class="advantages__number">№4</span>
               <p class="advantages__text">ехать в седону из лас-вегаса совсем не скучно</p>
-            </li>
+            </div>
 
-            <li class="advantages__item advantages__item--with-color-grey">
+            <div class="advantages__item advantages__item--with-color-grey">
               <h3 class="advantages__title">мало туристов</h3>
               <span class="advantages__number">№5</span>
               <p class="advantages__text">большинство едет в гранд каньон и толпится там</p>
-            </li>
-
-          </ul>
+            </div>
+          </div>
+          </div>
         </div>
       </section>
 
@@ -113,8 +121,8 @@
         <div class="search__wrapper">
           <h2 class="search__title">заинтересовались?</h2>
           <p class="search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <button class="button search__button" type="button">найти гостницу</button>
         </div>
+        <button class="button search__button" type="button">найти гостницу</button>
       </section>
 
       <section class="map">
