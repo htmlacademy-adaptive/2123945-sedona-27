@@ -1,6 +1,5 @@
 .main-nav__toggle {
-  margin-right: 20px;
-  margin-left: 25px;
+  margin-left: auto;
   box-sizing: border-box;
   border: none;
   background-color: transparent;
@@ -25,34 +24,38 @@
 }
 
 .main-nav__list--left {
-  /*display: none;*/
+  display: none;
 
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
     order: -1;
+    margin-right: auto;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-between;
     order: -2;
+    margin-right: auto;
   }
 }
 
 .main-nav__list--right {
-  /*display: none;*/
+  display: none;
 
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
     order: 0;
+    margin-left: auto;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-between;
     order: 2;
+    margin-left: auto;
   }
 }
 
