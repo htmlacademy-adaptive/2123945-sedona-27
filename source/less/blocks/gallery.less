@@ -2,37 +2,60 @@
   width: 320px;
 
   @media (min-width: @tablet-width) {
-  width: @tablet-width;
-  margin: 0 auto;
+    width: @tablet-width;
+    margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
-  width: @desktop-width;
-  margin: 0 auto;
+    width: @desktop-width;
+    margin: 0 auto;
   }
 }
 
 .gallery__wrapper {
   width: 280px;
+  outline: 5px solid rgba(0, 255, 225, 0.8);
+  outline-offset: -5px;
 
-}
-
-  .gallery__list {
-
-    @media (min-width: @tablet-width) {
-      width: @tablet-width;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      }
-
-      @media (min-width: @desktop-width) {
-      width: @desktop-width;
-      }
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    margin: 0 auto;
   }
 
-.gallery__item { min-height: 347px;
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+    margin: 0 auto;
+  }
+}
+
+.gallery__list {
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+  }
+}
+
+.gallery__item {
+  min-height: 347px;
+  margin: 0;
+  padding: 0;
+  outline: 5px solid rgba(255, 0, 204, 0.8);
+  outline-offset: -5px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.gallery__item:first-child {
+  min-width: 648px;
+  min-height: 480px;
   margin: 0;
   padding: 0;
 }
@@ -46,18 +69,46 @@
   text-transform: capitalize;
 }
 
-.gallery__img {
+.gallery__item-wrapper {
+  background-color: rgba(242, 242, 242, 1);
+}
+
+.gallery__item-wrapper--left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 144px;
+  padding-left: 20px;
+  padding-top: 22px;
+}
+
+.gallery__item-wrapper--right {
   width: 69px;
   display: flex;
   justify-content: space-between;
   padding-top: 11px;
   padding-bottom: 25px;
+  outline: 5px solid rgba(255, 0, 204, 0.8);
+  outline-offset: -5px;
 }
+
+.gallery__img--1 {
+  width: 648px;
+  height: 400px;
+}
+
+.gallery__img--2,
+.gallery__img--3,
+.gallery__img--4 {
+  outline: 5px solid rgba(255, 196, 0, 0.8);
+  outline-offset: -5px;
+  width: 324px;
+  height: 267px;
+}
+
 
 .gallery__number {
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
 }
-
-
