@@ -26,6 +26,7 @@
   flex-direction: column;
   outline: 5px solid rgba(34, 0, 255, 0.8);
   outline-offset: -5px;
+  margin-bottom: 64px;
 
   @media (min-width: @tablet-width) {
     flex-grow: 1;
@@ -33,18 +34,19 @@
     width: 280px;
     margin-right: 88px;
     position: relative;
+    margin-bottom: 0;
   }
 }
 
 .form__form-name::after {
   @media (min-width: @tablet-width) {
-  width: 1px;
-  height: 338px;
-  background-color: #dbdbdb;
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 315px;
+    width: 1px;
+    height: 338px;
+    background-color: #dbdbdb;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 315px;
   }
 }
 
@@ -53,13 +55,13 @@
   margin-top: 16px;
 }
 
-
 /* Контактная информация*/
 .form__form-contacts {
   display: flex;
   flex-direction: column;
   outline: 5px solid rgba(191, 255, 0, 0.8);
   outline-offset: -5px;
+  margin-bottom: 59px;
 
   @media (min-width: @tablet-width) {
     flex-grow: 1;
@@ -99,7 +101,6 @@
 }
 
 .form-name-contacts__wrapper {
-
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
@@ -107,6 +108,7 @@
     max-width: 648px;
     margin: 0 auto;
     justify-content: space-between;
+    margin-bottom: 48px;
   }
 }
 
@@ -119,71 +121,80 @@
   outline-offset: -5px;
 
   @media (min-width: @tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-width: 578px;
-    padding-left: 35px;
-    padding-right: 35px;
+    width: 575px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+  }
+}
+
+.form__fieldset-group {
+  border: none;
+}
+
+.form__fieldset-list {
+  @media (min-width: @tablet-width) {
+    max-width: 575px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin: 0 auto;
   }
 }
 
-  .form__fieldset-group {
-    border: none;
-  }
+.form__fieldset-item {
+  padding-bottom: 16px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: none;
+}
 
-  .form__fieldset-item {
-    padding-bottom: 16px;
-    font-family: inherit;
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 700;
-    text-transform: none;
-  }
+.form__fieldset-item:last-child {
+  padding-bottom: 0;
+}
 
-  .form__fieldset-item:last-child {
-    padding-bottom: 0;
-  }
+.control {
+  position: relative;
+  display: block;
+  padding: 10px 10px 0 54px;
+  margin-right: 15px;
+}
 
-  .control {
-    position: relative;
-    display: block;
-    padding: 10px 10px 0 54px;
-  }
+.control-mark {
+  position: absolute;
+  top: 2px;
+  left: -7px;
+  width: 46px;
+  height: 46px;
+  background-color: rgba(242, 242, 242, 1);
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
 
-  .control-mark {
-    position: absolute;
-    top: 2px;
-    left: -7px;
-    width: 46px;
-    height: 46px;
-    background-color: rgba(242, 242, 242, 1);
-    border-radius: 50%;
-    margin-bottom: 16px;
-  }
+.control-mark:last-child {
+  margin-bottom: 0;
+}
 
-  .control-mark:last-child {
-    margin-bottom: 0;
-  }
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 17px;
+  left: 17px;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(51, 51, 51, 1);
+  border-radius: 50%;
+  content: "";
+  background-image: url("../img/form-tick.svg");
+  background-repeat: no-repeat;
+}
 
-  .control-input[type="radio"]:checked + .control-mark::before {
-    position: absolute;
-    top: 17px;
-    left: 17px;
-    width: 10px;
-    height: 10px;
-    background-color: rgba(51, 51, 51, 1);
-    border-radius: 50%;
-    content: "";
-  }
+.control-input:hover + .control-mark {
+  background-color: #e5e5e5;
+}
 
-  .control-input:hover + .control-mark {
-    background-color: #e5e5e5;
-  }
-
-  .control-input:active + .control-mark {
-    background-color: rgba(213, 213, 213, 1);
-  }
+.control-input:active + .control-mark {
+  background-color: rgba(213, 213, 213, 1);
 }
 
 /*Посещенные достопримечательности*/
@@ -193,10 +204,28 @@
   margin-bottom: 49px;
   outline: 5px solid rgba(41, 18, 248, 0.8);
   outline-offset: -5px;
+  margin-bottom: 64px;
 
-  .form__fieldset-group {
-    border: none;
+  @media (min-width: @tablet-width) {
+    width: 480px;
+    margin: 0 auto;
+    margin-bottom: 48px;
   }
+
+
+.form__fieldset-group {
+  border: none;
+}
+
+.form__fieldset-list {
+  @media (min-width: @tablet-width) {
+    max-width: 575px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+}
 
   .form__fieldset-item {
     padding-bottom: 16px;
@@ -205,6 +234,10 @@
     line-height: 26px;
     font-weight: 700;
     text-transform: none;
+
+    @media (min-width: @tablet-width) {
+      width: 224px;
+    }
   }
 
   .form__fieldset-item:last-child {
@@ -215,6 +248,7 @@
     position: relative;
     display: block;
     padding: 10px 10px 0 54px;
+    margin-right: 15px;
   }
 
   .control-mark {
@@ -229,10 +263,11 @@
     position: absolute;
     top: 17px;
     left: 17px;
+    width: 22px;
+    height: 16px;
     content: "";
     background-image: url("../img/form-tick.svg");
     background-repeat: no-repeat;
-
   }
 
   .control-input[type="radio"]:checked + .control-mark::before {
@@ -262,10 +297,15 @@
   margin-bottom: 56px;
   outline: 5px solid rgba(255, 0, 162, 0.8);
   outline-offset: -5px;
+
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    margin: 0 auto;
+  }
 }
 
 .form__form-emotions textarea {
-  min-height: 150px;
+  min-height: 160px;
   background-color: rgba(242, 242, 242, 1);
   color: rgba(0, 0, 0, 0.3);
   padding: 16px;
@@ -274,12 +314,21 @@
   font-weight: 700;
   line-height: 26px;
   border: none;
+  margin-bottom: 48px;
 }
 
 .form-emotions__text {
   color: rgba(51, 51, 51, 0.6);
-  margin-left: auto;
-  margin-top: 3px;
+  padding-top: 24px;
+}
+
+.form-emotions__wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    width: 648px;
+    justify-content: space-between;
+  }
 }
 
 .form__title {
@@ -289,6 +338,14 @@
   text-align: center;
   padding: 0;
   margin: 0;
+  padding-bottom: 28px;
+}
+
+.form__form-attractions .form__title {
+  @media (min-width: @tablet-width) {
+    width: 308px;
+    margin: 0 auto;
+  }
 }
 
 .field {
@@ -323,4 +380,6 @@
 .form__button {
   min-height: 59px;
   box-sizing: border-box;
+  min-width: 324px;
+  margin-right: 132px;
 }
