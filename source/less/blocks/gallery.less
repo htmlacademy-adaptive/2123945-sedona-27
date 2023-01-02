@@ -1,8 +1,10 @@
 .gallery {
   width: 320px;
+  outline: 5px solid rgba(204, 255, 0, 0.8);
+  outline-offset: -5px;
 
   @media (min-width: @tablet-width) {
-    width: @tablet-width;
+    width: 768px;
     margin: 0 auto;
   }
 
@@ -21,6 +23,8 @@
   @media (min-width: @tablet-width) {
     width: 648px;
     margin: 0 auto;
+    outline: 5px solid rgba(0, 255, 225, 0.8);
+    outline-offset: -5px;
   }
 
   @media (min-width: @desktop-width) {
@@ -44,7 +48,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: @desktop-width;
+    width: 1200px;
   }
 }
 
@@ -52,6 +56,7 @@
   width: 280px;
 
   @media (min-width: @tablet-width) {
+    position: relative;
     min-height: 347px;
     margin: 0;
     padding: 0;
@@ -61,6 +66,19 @@
     flex-direction: column;
     flex-grow: 1;
   }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 0;
+      width: 400px;
+      height: 80px;
+      background-color: #000000;
+      opacity: 0.3;
+    }
+  }
 }
 
 .gallery__item:first-child {
@@ -69,6 +87,11 @@
     min-height: 480px;
     margin: 0;
     padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    min-height: 400px;
   }
 }
 
@@ -106,14 +129,29 @@
 }
 
 .gallery__item-wrapper:first-child {
-  @media (min-width: @tablet-width) {
-    width: 648px;
-  }
-}
+  min-height: 95px;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  position: relative;
 
-.gallery__item-wrapper:last-child {
   @media (min-width: @tablet-width) {
-    width: 324px;
+    min-width: 648px;
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 0;
+      width: 400px;
+      height: 80px;
+      background-color: #000000;
+      opacity: 0.3;
+    }
   }
 }
 
@@ -153,6 +191,11 @@
     width: 648px;
     height: 400px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    background-size: contain;
+  }
 }
 
 .gallery__img--2,
@@ -166,5 +209,9 @@
     outline-offset: -5px;
     width: 324px;
     height: 267px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
   }
 }

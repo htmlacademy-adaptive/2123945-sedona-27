@@ -5,8 +5,15 @@
   outline-offset: -5px;
 
   @media (min-width: @tablet-width) {
-    width: @tablet-width;
+    width: 768px;
     margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 1200px;
+    margin: 0 auto;
+    background-image: none;
+    padding: 0;
   }
 }
 
@@ -26,6 +33,13 @@
     margin: 0 auto;
     padding-bottom: 67px;
   }
+
+  @media (min-width: @desktop-width) {
+    min-width: 458px;
+    margin: 0 auto;
+    background-image: none;
+    padding: 0;
+  }
 }
 
 .hero-catalog-description__title {
@@ -33,4 +47,10 @@
   margin: 0;
   padding-bottom: 35px;
   padding-top: 91px;
+}
+
+.hero-catalog-description__text {
+  @media (min-width: @desktop-width) {
+    padding-bottom: 67px;
+  }
 }
