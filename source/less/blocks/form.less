@@ -1,26 +1,75 @@
 .form {
   display: flex;
   flex-direction: column;
+  outline: 5px solid rgba(0, 255, 149, 0.8);
+  outline-offset: -5px;
 }
 
 .form__wrapper {
   width: 280px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+    margin: 0 auto;
+  }
 }
 
 /* Представьтесь*/
 .form__form-name {
   display: flex;
   flex-direction: column;
-  margin-top: 53px;
-  margin-bottom: 64px;
+  outline: 5px solid rgba(34, 0, 255, 0.8);
+  outline-offset: -5px;
+
+  @media (min-width: @tablet-width) {
+    flex-grow: 1;
+    justify-content: flex-start;
+    width: 280px;
+    margin-right: 88px;
+    position: relative;
+  }
 }
+
+.form__form-name::after {
+  @media (min-width: @tablet-width) {
+  width: 1px;
+  height: 338px;
+  background-color: #dbdbdb;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 315px;
+  }
+}
+
+.form__label {
+  padding-left: 16px;
+  margin-top: 16px;
+}
+
 
 /* Контактная информация*/
 .form__form-contacts {
   display: flex;
   flex-direction: column;
-  margin-bottom: 59px;
+  outline: 5px solid rgba(191, 255, 0, 0.8);
+  outline-offset: -5px;
+
+  @media (min-width: @tablet-width) {
+    flex-grow: 1;
+    justify-content: flex-start;
+    width: 298px;
+  }
+}
+
+.form-phone__wrapper .field {
+  padding-left: 18px;
 }
 
 .form-phone__wrapper {
@@ -49,11 +98,35 @@
   box-sizing: border-box;
 }
 
+.form-name-contacts__wrapper {
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    max-width: 648px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+}
+
 /*Ваше общее впечатление*/
 .form__form-impression {
   display: flex;
   flex-direction: column;
   margin-bottom: 49px;
+  outline: 5px solid rgba(209, 70, 10, 0.8);
+  outline-offset: -5px;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 578px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin: 0 auto;
+  }
+}
 
   .form__fieldset-group {
     border: none;
@@ -81,7 +154,7 @@
   .control-mark {
     position: absolute;
     top: 2px;
-    left: -13px;
+    left: -7px;
     width: 46px;
     height: 46px;
     background-color: rgba(242, 242, 242, 1);
@@ -118,6 +191,8 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 49px;
+  outline: 5px solid rgba(41, 18, 248, 0.8);
+  outline-offset: -5px;
 
   .form__fieldset-group {
     border: none;
@@ -154,7 +229,21 @@
     position: absolute;
     top: 17px;
     left: 17px;
-    content: url("../img/form-tick.svg");
+    content: "";
+    background-image: url("../img/form-tick.svg");
+    background-repeat: no-repeat;
+
+  }
+
+  .control-input[type="radio"]:checked + .control-mark::before {
+    position: absolute;
+    top: 17px;
+    left: 17px;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(51, 51, 51, 1);
+    border-radius: 50%;
+    content: "";
   }
 
   .control-input:hover + .control-mark {
@@ -171,6 +260,8 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 56px;
+  outline: 5px solid rgba(255, 0, 162, 0.8);
+  outline-offset: -5px;
 }
 
 .form__form-emotions textarea {
@@ -198,7 +289,6 @@
   text-align: center;
   padding: 0;
   margin: 0;
-  padding-bottom: 20px;
 }
 
 .field {

@@ -1,6 +1,18 @@
 .hero-form__wrapper {
   width: 280px;
   margin: 0 auto;
+  outline: 5px solid rgba(255, 0, 81, 0.8);
+  outline-offset: -5px;
+
+  @media (min-width: @tablet-width) {
+    width: 435px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+    margin: 0 auto;
+  }
 }
 
 .hero-form {
@@ -15,6 +27,11 @@
   background-size: cover;
   min-height: 158px;
   margin-bottom: 37px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 290px;
+    margin: 0 auto;
+  }
 }
 
 .hero-form__img {
