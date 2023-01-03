@@ -143,17 +143,17 @@
     flex-direction: row;
     width: @desktop-width;
   }
+}
 
-  .advantages__item__content-wrapper {
-    @media (min-width: @tablet-width) {
-      width: 190px;
-      padding: 158px 33px 60px 33px;
-    }
+.advantages__item__content-wrapper {
+  @media (min-width: @tablet-width) {
+    width: 190px;
+    padding: 158px 33px 60px 33px;
+  }
 
-    @media (min-width: @desktop-width) {
-      width: 300px;
-      padding: 169px 50px 69px 50px;
-    }
+  @media (min-width: @desktop-width) {
+    width: 300px;
+    padding: 169px 50px 69px 50px;
   }
 }
 
@@ -219,50 +219,22 @@
   @media (min-width: @desktop-width) {
     max-width: 400px;
   }
+}
 
-  .advantages__title {
-    font-size: 21px;
-    line-height: 26px;
-    font-weight: 700;
-    padding-left: 47px;
-    padding-bottom: 16px;
-    padding-top: 8px;
-    color: #000000;
+.advantages__item--house {
+  background-image: url("img/advantages-house.svg");
+  background-repeat: no-repeat;
+}
 
-    @media (min-width: @tablet-width) {
-      padding-left: 0;
-    }
+.advantages__item--food {
+  background-image: url("img/advantages-food.svg");
+  background-repeat: no-repeat;
+}
 
-    @media (min-width: @desktop-width) {
-      padding-bottom: 33px;
-      padding-top: 0;
-    }
-  }
-
-  .advantages__text {
-    padding-left: 47px;
-    color: #000000;
-
-    @media (min-width: @tablet-width) {
-      padding-left: 0;
-    }
-  }
-
-  .advantages__item--house {
-    background-image: url("img/advantages-house.svg");
-    background-repeat: no-repeat;
-  }
-
-  .advantages__item--food {
-    background-image: url("img/advantages-food.svg");
-    background-repeat: no-repeat;
-  }
-
-  .advantages__item--souvenirs {
-    background-image: url("img/advantages-souvenirs.svg");
-    background-repeat: no-repeat;
-    margin-bottom: 46px;
-  }
+.advantages__item--souvenirs {
+  background-image: url("img/advantages-souvenirs.svg");
+  background-repeat: no-repeat;
+  margin-bottom: 46px;
 }
 
 .advantages__wrapper--line-4 {
@@ -296,7 +268,6 @@
     min-width: 256px;
     min-height: 256px;
   }
-}
 
   .advantages__title {
     font-size: 18px;
@@ -312,6 +283,7 @@
     font-weight: 400;
     color: #000000;
   }
+}
 
 .advantages__item--with-color-grey .advantages__item__content-wrapper {
   width: 190px;
