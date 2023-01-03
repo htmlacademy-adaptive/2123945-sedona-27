@@ -1,9 +1,29 @@
+.main-nav {
+  min-height: 223px;
+  background-color: #81b3d2;
+  position: relative;
+  width: auto;
+}
+
 .main-nav__toggle {
+  position: absolute;
   margin-left: auto;
   box-sizing: border-box;
   border: none;
-  background-color: transparent;
   padding: 0;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 22px;
+  height: 22px;
+  fill: #81b3d2;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    background-color: #669ec0;
+  }
 
   @media (min-width: @tablet-width) {
     display: none;
