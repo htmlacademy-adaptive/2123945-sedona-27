@@ -11,27 +11,30 @@
 
   <body class="page_body">
 
-<!--HEADER-->
     <header class="main-header">
-      <div class="main-header__wrapper"
-        <a href="index.html" class="main-header__logo">
+
+      <div class="main-header__wrapper">
+
+        <a class="main-header__logo" href="index.html">
           <img class="main-header__logo-img" src="img/header-logo.svg" width="185" height="96" alt="Логотип Седона.">
         </a>
-        <nav class="main-nav">
+
           <button class="main-nav__toggle" type="button">
-            <svg class="main-nav__icon" width="23" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" fill="#81B3D2"/></svg>
+            <svg class="main-nav__icon" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" fill="#81B3D2"/></svg>
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
-              <li class="main-nav__item"><a href="index.html">главная</a></li>
-              <li class="main-nav__item"><a href="catalog.html">фото и видео</a></li>
-              <li class="main-nav__item main-nav__item--active"><a>форма отзыва</a></li>
-              <li class="main-nav__item"><a href="#">html academy</a></li>
-            </ul>
-          </div>
-        </nav>
+
+              <ul class="main-nav__list--left">
+                <li class="main-nav__item"><a href="index.html">главная</a></li>
+                <li class="main-nav__item"><a>фото и видео</a></li>
+              </ul>
+              <ul class="main-nav__list--right">
+                <li class="main-nav__item main-nav__item--active"><a>форма отзыва</a></li>
+                <li class="main-nav__item"><a href="#">html academy</a></li>
+          </ul>
+
       </div>
+
     </header>
 
 <!--MAIN-->
@@ -47,7 +50,7 @@
     <div class="hero-form__wrapper">
       <section class="hero-form-description">
         <h2 class="hero-form-description__title">оставьте свой отзыв</h2>
-        <p class="hero-form-description__text">помогите нашим отелям стать лучше! <br> оставьте отзыв о них, а также о <br> посещенных вами <br> достопримечательностях</p>
+        <p class="hero-form-description__text">помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </section>
     </div>
 
@@ -57,23 +60,25 @@
 
         <form class="form" action="https://echo.htmlacademy.ru/" method="post">
 
+          <div class="form-name-contacts__wrapper">
+
           <section class="form__form-name">
             <h2 class="form__title">представьтесь:</h2>
 
-            <label for="form-name">имя*:</label>
+            <label class="form__label" for="form-name">имя*:</label>
             <input class="field" type="text" placeholder="Пётр" id="form-name" name="name">
 
-            <label for="form-surname">фамилия*:</label>
+            <label class="form__label" for="form-surname">фамилия*:</label>
             <input class="field" type="text" placeholder="Пустота" id="form-surname" name="surname">
 
-            <label for="form-patronymic">отчество:</label>
+            <label class="form__label" for="form-patronymic">отчество:</label>
             <input class="field" type="text" placeholder="Викторович" id="form-patronymic" name="patronymic">
           </section>
 
           <section class="form__form-contacts">
             <h2 class="form__title">контактная информация:</h2>
 
-            <label for="form-phone">Контактный телефон*:</label>
+            <label class="form__label" for="form-phone">Контактный телефон*:</label>
 
             <div class="form-phone__wrapper">
               <input class="field" type="tel" placeholder="Введите телефон" id="form-phone" name="phone">
@@ -83,7 +88,7 @@
               </div>
             </div>
 
-            <label for="form-email">Электронная почта*:</label>
+            <label class="form__label" for="form-email">Электронная почта*:</label>
 
             <div class="form-email__wrapper">
               <input class="field" type="email" placeholder="Введите e-mail" id="form-email" name="email">
@@ -93,6 +98,7 @@
               </div>
             </div>
           </section>
+        </div>
 
           <section class="form__form-impression">
             <h2 class="form__title">ваше общее впечатление:</h2>
@@ -129,7 +135,7 @@
           </section>
 
           <section class="form__form-attractions">
-            <h2 class="form__title">посещенные <br>достопримечательности:</h2>
+            <h2 class="form__title">посещенные достопримечательности:</h2>
 
             <fieldset class="form__fieldset-group">
               <ul class="form__fieldset-list">
@@ -174,10 +180,11 @@
           <section class="form__form-emotions">
             <h2 class="form__title">Опишите свои эмоции:</h2>
             <textarea placeholder="Опишите подробно все свои восторги"></textarea>
+              <div class="form-emotions__wrapper">
+                <button class="button form__button" type="submit">отправить отзыв</button>
+                <span class="form-emotions__text">* — обязательные поля</span>
+              </div>
           </section>
-
-          <button class="button form__button" type="submit">отправить отзыв</button>
-          <span class="form-emotions__text">* — обязательные поля</span>
         </form>
     </div>
 
@@ -237,7 +244,7 @@
 
   <div class="modal-container modal-container--failure">
     <h2 class="modal__title modal-container--failure">что-то пошло не так!</h2>
-    <p class="modal__text modal-container--failure">Проверьте поля, выделенные <br> красным, скорее всего вы <br> забыли их заполнить</p>
+    <p class="modal__text modal-container--failure">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
     <button class="button modal__close-button" type="button">Ок
       <span class="visually-hidden">Ок</span>
     </button>
@@ -245,7 +252,7 @@
 
   <div class="modal-container modal-container--success">
     <h2 class="modal__title modal-container--success">Ваш отзыв отправлен!</h2>
-    <p class="modal__text modal-container--success">Спасибо за ваше участие, ваш <br> отзыв уже поступил к нам.<br>В ближайшее время мы <br> опубликуем его на сайте.</p>
+    <p class="modal__text modal-container--success">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
     <button class="button modal__close-button" type="button">Закрыть окно
       <span class="visually-hidden">Закрыть окно</span>
     </button>
