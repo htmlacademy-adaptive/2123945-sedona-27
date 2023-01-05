@@ -1,5 +1,4 @@
 .main-nav {
-  min-height: 223px;
   background-color: #81b3d2;
   position: relative;
   width: auto;
@@ -7,23 +6,43 @@
   flex-direction: column;
   justify-content: center;
   z-index: 2;
+  text-align: center;
 
-  .main-nav__item {
+  .main-nav__item a {
     min-height: 55px;
+    display: flex;
+    justify-content: center;
     color: #ffffff;
     font-size: 18px;
     line-height: 26px;
     font-weight: 700;
     align-items: center;
     min-width: 320px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+  }
+
+  @media (min-width: @tablet-width) {
+    min-width: 153px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 240px;
+    display: flex;
+    align-items: center;
+    text-align: center;
   }
 }
 
+/*Просто пустая кликабельная кнопка*/
 .main-nav__toggle {
   position: absolute;
   margin-left: auto;
   box-sizing: border-box;
-  //border: none;
+  border: none;
   padding: 0;
   top: 17px;
   right: 19px;
@@ -44,22 +63,24 @@
   }
 }
 
+/* Бургерное меню - верхняя палочка*/
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 15px;
-  left: 17px;
-  width: 36px;
-  height: 2px;
+  top: 0;
+  right: -2px;
+  width: 22px;
+  height: 4px;
   background-color: #ffffff;
-  box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+  box-shadow: 0 7px 0 0 #ffffff, 0 14px 0 0 #ffffff;
 }
 
+/*остальные две палочки внизу - тенями*/
 .main-nav--closed .main-nav__toggle:active::before {
   background-color: fade(#ffffff, 30%);
   box-shadow:
-    0 8px 0 0 fade(#ffffff, 30%),
-    0 16px 0 0 fade(#ffffff, 30%);
+    0 5px 0 0 fade(#ffffff, 30%),
+    0 10px 0 0 fade(#ffffff, 30%);
 }
 
 @media (max-width: @mobile-width-only) {
@@ -68,6 +89,8 @@
 
     &--active {
       display: block;
+      color: #81b3d2;
+      height: 55px;
     }
   }
 
@@ -86,18 +109,20 @@
   }
 }
 
+/*КНОПКА*/
 .main-nav--opened .main-nav__toggle {
-  top: 0;
-  right: 0;
+  top: 17px;
+  right: 19px;
 
+  /*Крестик - двумя палочками*/
   &::before,
   &::after {
     content: "";
     position: absolute;
-    top: 24px;
-    left: 18px;
+    top: 8px;
+    right: -10px;
     width: 36px;
-    height: 2px;
+    height: 4px;
     background-color: #ffffff;
   }
 
@@ -160,31 +185,3 @@
     margin-left: auto;
   }
 }
-
-//.main-nav__item {
-//  color: rgba(0, 0, 0, 1);
-//  text-transform: uppercase;
-//  font-size: 14px;
-//  line-height: 21px;
-//  font-weight: 700;
-//  display: flex;
-//  justify-content: center;
-
-//  @media (min-width: @tablet-width) {
-//    min-width: 153px;
-//    display: flex;
-//    align-items: center;
-//    text-align: center;
-//  }
-
-//  @media (min-width: @desktop-width) {
-//    min-width: 240px;
-//    display: flex;
-//    align-items: center;
-//    text-align: center;
-//  }
-//}
-
-//.main-nav__item--active {
-//  color: rgba(118, 99, 87, 1);
-//}
