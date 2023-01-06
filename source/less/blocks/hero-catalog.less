@@ -32,6 +32,7 @@
   min-height: 158px;
   min-width: 320px;
   margin-bottom: 37px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     min-height: 290px;
@@ -46,5 +47,32 @@
     margin: 0 auto;
     background-image: none;
     padding: 0;
+  }
+}
+
+.hero-catalog::before {
+  content: "";
+  background-image: url("../img/intro-triangle.svg");
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 57px;
+  position: absolute;
+  top: 102px;
+  left: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 1200px;
+    height: 57px;
+    background-image: url("../img/intro-triangle-tablet.svg.svg");
+    top: 235px;
+    left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    height: 57px;
+    top: 246px;
+    left: 0;
+    background-image: url("../img/intro-triangle-desktop.svg.svg");
   }
 }
