@@ -4,6 +4,7 @@
   box-sizing: border-box;
   outline: 5px solid rgba(13, 0, 255, 0.8);
   outline-offset: -5px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     width: 768px;
@@ -22,6 +23,25 @@
   background-repeat: no-repeat;
   width: 320px;
   height: 57px;
+}
+
+.hero-description::after {
+  content: "";
+  background-image: url("../img/close-triangle.png");
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 57px;
+  position: absolute;
+  top: 198px;
+  left: 0;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .hero-description__wrapper {
