@@ -1,6 +1,20 @@
 .hero-description {
+  margin: 0 auto;
   text-align: center;
   box-sizing: border-box;
+  outline: 5px solid rgba(13, 0, 255, 0.8);
+  outline-offset: -5px;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 .hero-description::before {
@@ -11,14 +25,67 @@
   height: 57px;
 }
 
+.hero-description::after {
+  content: "";
+  background-image: url("../img/close-triangle.png");
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 57px;
+  position: absolute;
+  top: 198px;
+  left: 0;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.hero-description__wrapper {
+  margin-left: 15px;
+  margin-right: 13px;
+  outline: 5px solid rgba(255, 0, 217, 0.8);
+  outline-offset: -5px;
+
+  @media (min-width: @tablet-width) {
+    width: 520px;
+    min-height: 103px;
+    margin: 0 auto;
+    padding-top: 47px;
+    padding-bottom: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 484px;
+    margin-left: 357px;
+    margin-right: 359px;
+  }
+}
+
 .hero-description__title {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
-  padding: 0;
-  padding-top: 32px;
+  padding: 32px 18px 35px 18px;
+  color: #000000;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .hero-description__text {
@@ -28,6 +95,15 @@
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  margin-top: 35px;
-  margin-bottom: 16px;
+  padding-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    margin: 0;
+  }
 }
