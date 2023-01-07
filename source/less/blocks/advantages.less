@@ -1,11 +1,33 @@
 /*ОБЩИЕ СТИЛИ*/
 
 .advantages {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    min-width: @tablet-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: @desktop-width;
+  }
 }
 
 .advantages__wrapper {
   min-width: 284px;
+  margin: 0 auto;
+  outline: 5px solid rgba(255, 230, 0, 0.8);
+  outline-offset: -5px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 768px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 .advantages__item {
@@ -13,37 +35,59 @@
   text-align: center;
   background-color: rgba(255, 255, 255, 1);
   padding-top: 25px;
-  padding-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.advantages__img {
+  outline: 5px solid rgba(255, 0, 140, 0.8);
+  outline-offset: -5px;
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
+  }
 }
 
 /*С ГОЛУБЫМ ФОНОМ*/
 .advantages__item--color-blue {
   background-color: rgba(129, 179, 210, 1);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-top: 54px;
+  max-width: 320px;
+  padding-top: 33px;
   padding-bottom: 40px;
+  color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    max-width: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 400px;
+    margin-left: auto;
+  }
 
   .advantages__title {
     font-size: 18px;
     line-height: 26px;
     font-weight: 700;
     color: rgba(255, 255, 255, 1);
+    padding-bottom: 11px;
   }
 
+  .advantages__number,
   .advantages__text {
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
     color: rgba(255, 255, 255, 1);
-  }
-
-  .advantages__number {
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 1);
+    padding-top: 17px;
   }
 }
 
@@ -51,17 +95,37 @@
 .advantages__item--icon {
   text-align: start;
   background-color: rgba(255, 255, 255, 1);
+  padding-left: 47px;
+  padding-top: 25px;
+
+  .advantages__item--icon:last-child {
+    padding-bottom: 46px;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-left: 0;
+    padding-top: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 400px;
+    padding-top: 25px;
+  }
 
   .advantages__title {
     font-size: 18px;
     line-height: 26px;
     font-weight: 700;
-    padding-left: 47px;
-    padding-bottom: 16px;
   }
 
   .advantages__text {
-    padding-left: 47px;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    padding-top: 16px;
   }
 
   .advantages__item--house {
@@ -70,28 +134,47 @@
   }
 
   .advantages__item--food {
-    background-image: url("img/advantages-food.svg");
+    background-image: url("..img/advantages-food.svg");
     background-repeat: no-repeat;
   }
 
   .advantages__item--souvenirs {
-    background-image: url("img/advantages-souvenirs.svg");
+    background-image: url("..img/advantages-souvenirs.svg");
     background-repeat: no-repeat;
     margin-bottom: 46px;
   }
 }
+
+.advantages__item--icon .advantages__item__content-wrapper {
+  @media (min-width: @tablet-width) {
+    width: 190px;
+    flex-grow: 1;
+    min-width: 331px;
+  }
+}
+
 
 /*НА СЕРОМ ФОНЕ*/
 .advantages__item--with-color-grey {
   background-color: #eeeeee;
   display: flex;
   flex-direction: column;
-  min-height: 117px;
+  justify-content: space-between;
+  flex-grow: 1;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    min-width: 256px;
+    min-height: 256px;
+  }
 
   .advantages__title {
     font-size: 18px;
     line-height: 26px;
     font-weight: 700;
+    color: #000000;
+    padding-top: 20px;
+    padding-bottom: 15px;
   }
 
   .advantages__number,
@@ -99,5 +182,117 @@
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
+    color: #000000;
+    padding-top: 20px;
+  }
+
+  .advantages__item__content-wrapper {
+    @media (min-width: @tablet-width) {
+      min-width: 190px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin: 0 auto;
+      padding-top: 52px;
+      width: 153px;
+    }
+  }
+}
+
+//.advantages__item--with-color-grey::after {
+//  content: "";
+//  width: 284px;
+//  height: 1px;
+//  position: absolute;
+//  top: 198px;
+//  left: 0;
+//  color: rgba(214, 214, 214, 1);
+
+//  @media (min-width: @tablet-width) {
+//    display: none;
+//  }
+
+//  @media (min-width: @desktop-width) {
+//    display: none;
+//  }
+//}
+
+
+.advantages__wrapper--line-1 {
+  width: 284px;
+  margin: 0 auto;
+  outline: 5px solid rgba(255, 179, 0, 0.8);
+  outline-offset: -5px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    width: @tablet-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    width: @desktop-width;
+  }
+}
+
+.advantages__wrapper--line-2 {
+  width: 284px;
+  margin: 0 auto;
+  outline: 5px solid rgba(76, 0, 255, 0.8);
+  outline-offset: -5px;
+  color: #000000;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    width: @tablet-width;
+    padding: 0;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    width: @desktop-width;
+  }
+}
+
+.advantages__wrapper--line-3 {
+  margin: 0 auto;
+  outline: 5px solid rgba(145, 255, 0, 0.8);
+  outline-offset: -5px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    width: @tablet-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    width: @desktop-width;
+  }
+}
+
+.advantages__wrapper--line-4 {
+  width: 257px;
+  margin: 0 auto;
+  outline: 5px solid rgba(0, 153, 255, 0.8);
+  outline-offset: -5px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    width: @tablet-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    width: @desktop-width;
   }
 }
