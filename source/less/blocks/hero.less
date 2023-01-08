@@ -12,12 +12,14 @@
     min-height: 518px;
     background-image: none;
     padding: 0;
+    background-image: url("../img/back-tablet.jpg");
   }
 
   @media (min-width: @desktop-width) {
     min-height: 518px;
     background-image: none;
     padding: 0;
+    background-image: url("../img/back-desktop.jpg");
   }
 }
 
@@ -46,4 +48,12 @@
     left: 0;
     background-image: url("../img/intro-triangle-desktop.svg.svg");
   }
+}
+
+.hero__img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: 100px;
+
 }

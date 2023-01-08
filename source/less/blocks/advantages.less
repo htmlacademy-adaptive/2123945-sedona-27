@@ -50,11 +50,10 @@
 .advantages__img {
   outline: 5px solid rgba(255, 0, 140, 0.8);
   outline-offset: -5px;
-
-  @media (min-width: @desktop-width) {
-    width: 800px;
-    height: 100%;
-  }
+  max-width: 100%;
+  height: auto;
+  flex-grow: 1;
+  object-fit: cover;
 }
 
 /*С ГОЛУБЫМ ФОНОМ*/
@@ -131,7 +130,7 @@
 }
 
 .advantages__item--house {
-  background-image: url("/source/img/advantages-house.svg");
+  background-image: url("img/advantages-house.svg");
   background-repeat: no-repeat;
   fill: #000000;
 }
@@ -149,12 +148,9 @@
 
 .advantages__item--icon .advantages__item__content-wrapper {
   @media (min-width: @tablet-width) {
-    width: 190px;
     flex-grow: 1;
-    min-width: 331px;
   }
 }
-
 
 /*НА СЕРОМ ФОНЕ*/
 .advantages__item--with-color-grey {
@@ -231,6 +227,7 @@
     display: flex;
     flex-direction: row;
     width: @tablet-width;
+    max-height: 256px;
   }
 
   @media (min-width: @desktop-width) {
