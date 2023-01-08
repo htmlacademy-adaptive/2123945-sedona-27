@@ -1,0 +1,72 @@
+.hero-form__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  outline: 5px solid #ff0051cc;
+  outline-offset: -5px;
+  margin-bottom: 53px;
+
+  @media (min-width: @tablet-width) {
+    width: 435px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+    margin: 0 auto;
+  }
+}
+
+.hero-form {
+  min-height: 158px;
+  background-color: #81b3d2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/back-mobile-catalog.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 37px;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    min-height: 290px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 301px;
+    margin: 0 auto;
+  }
+}
+
+.hero-form::before {
+  content: "";
+  background-image: url("../img/intro-triangle.svg");
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 57px;
+  position: absolute;
+  top: 102px;
+  left: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 1200px;
+    height: 57px;
+    background-image: url("../img/intro-triangle-tablet.svg.svg");
+    top: 235px;
+    left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    height: 57px;
+    top: 246px;
+    left: 0;
+    background-image: url("../img/intro-triangle-desktop.svg.svg");
+  }
+}
+
+.hero-form__img {
+  display: block;
+}

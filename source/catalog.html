@@ -10,25 +10,33 @@
 
   <body class="page_body">
 
-<!--HEADER-->
     <header class="main-header">
-      <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-img" src="img/header-logo.svg" width="185" height="96" alt="Логотип Седона.">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <svg class="main-nav__icon" width="23" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" fill="#81B3D2"/></svg>
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
+
+      <div class="main-header__wrapper">
+
+        <a class="main-header__logo" href="index.html">
+          <img class="main-header__logo-img" src="img/header-logo.svg" width="185" height="96" alt="Логотип Седона.">
+        </a>
+
+        <nav class="main-nav main-nav--opened main-nav--nojs">
+
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+
+          <ul class="main-nav__list--left">
             <li class="main-nav__item"><a href="index.html">главная</a></li>
             <li class="main-nav__item main-nav__item--active"><a>фото и видео</a></li>
+          </ul>
+
+          <ul class="main-nav__list--right">
             <li class="main-nav__item"><a href="form.html">форма отзыва</a></li>
             <li class="main-nav__item"><a href="#">html academy</a></li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+
+      </div>
+
     </header>
 
 <!--MAIN-->
@@ -36,14 +44,17 @@
 
   <h1 class="visually-hidden">седона: каталог</h1>
 
-  <section class="hero-catalog">
-    <h2 class="visually-hidden">добро пожаловать в седону</h2>
-    <img class="hero-catalog__img" src="img/back-text.png" width="229" height="39" style="background-color: rgba(84, 150, 189, 1);" alt="welcome to the gorgeous sedona! because the grand canyon sucks!">
-  </section>
+  <div class="hero-catalog__wrapper">
+    <section class="hero-catalog">
+        <h2 class="visually-hidden">добро пожаловать в седону</h2>
+        <img class="hero-catalog__img" src="img/back-text.png" width="229" height="39" alt="welcome to the gorgeous sedona! because the grand canyon sucks!">
+    </section>
+  </div>
+
   <div class="hero-catalog-description__wrapper">
   <section class="hero-catalog-description">
     <h2 class="hero-catalog-description__title">фото и видео</h2>
-    <p class="hero-catalog-description__text">не можете решиться на путешествие <br> из-за курса? фотографии помогут вам <br>забыть о политике и экономике.</p>
+    <p class="hero-catalog-description__text">не можете решиться на путешествие из-за курса? фотографии помогут вам забыть о политике и экономике.</p>
   </section>
   </div>
 
@@ -57,57 +68,93 @@
           <a href="#">
             <img class="gallery__img--1" src="img/photo-1.jpg" width="280" height="280" alt="вид на дорогу в седоне.">
           </a>
-          <h3 class="gallery__title">неродные просторы</h3>
-          <p class="gallery__text">Автор фото: Бориc</p>
-          <div class="gallery__img">
-            <img srс="img/like-icon.svg" width="23" height="21" alt="знак like.">
+
+          <div class="gallery__item-wrapper">
+
+            <div class="gallery__item-content-wrapper--1">
+              <h3 class="gallery__title">неродные просторы</h3>
+              <p class="gallery__text">Автор фото: Бориc</p>
+            </div>
+
+            <div class="gallery__item-content-wrapper--2">
+              <svg src="../img/like-icon.svg" width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" fill="#000"/></svg>
+              <span class="gallery__number">1350</span>
+            </div>
+
           </div>
-          <span class="gallery__number">1350</span>
+
         </li>
 
         <li class="gallery__item">
           <a href="#">
             <img class="gallery__img--2" src="img/photo-2.jpg" width="280" height="280" alt="вид на растения в седоне.">
           </a>
-          <h3 class="gallery__title">местная растительность</h3>
-          <p class="gallery__text">Автор фото: Сергей</p>
-          <div class="gallery__img">
-            <img srс="img/like-icon.svg" width="23" height="21" alt="знак like.">
+
+          <div class="gallery__item-wrapper">
+
+            <div class="gallery__item-content-wrapper--1">
+              <h3 class="gallery__title">местная растительность</h3>
+              <p class="gallery__text">Автор фото: Сергей</p>
+            </div>
+
+            <div class="gallery__item-content-wrapper--2">
+              <svg src="../img/like-icon" width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" fill="#000"/></svg>
+              <span class="gallery__number">143</span>
+            </div>
+
           </div>
-          <span class="gallery__number">143</span>
         </li>
 
         <li class="gallery__item">
           <a href="#">
             <img class="gallery__img--3" src="img/photo-3.jpg" width="280" height="280" alt="вид на дорогу в седоне.">
           </a>
-          <h3 class="gallery__title">дорога на север</h3>
-          <p class="gallery__text">Автор фото: Петр</p>
-          <div class="gallery__img">
-            <img srс="img/like-icon.svg" width="23" height="21" alt="знак like.">
+
+          <div class="gallery__item-wrapper">
+
+            <div class="gallery__item-content-wrapper--1">
+              <h3 class="gallery__title">дорога на север</h3>
+              <p class="gallery__text">Автор фото: Петр</p>
+            </div>
+
+            <div class="gallery__item-content-wrapper--2">
+              <svg src="../img/like-icon" width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" fill="#000"/></svg>
+              <span class="gallery__number">96</span>
+            </div>
+
           </div>
-          <span class="gallery__number">96</span>
         </li>
 
         <li class="gallery__item">
           <a href="#">
             <img class="gallery__img--4" src="img/photo-4.jpg" width="280" height="280" alt="вид на дорогу в седоне.">
           </a>
-          <h3 class="gallery__title">мост дьявола</h3>
-          <p class="gallery__text">Автор фото: Антон</p>
-          <div class="gallery__img">
-            <img srс="img/like-icon.svg" width="23" height="21" alt="знак like.">
+
+          <div class="gallery__item-wrapper">
+
+            <div class="gallery__item-content-wrapper--1">
+              <h3 class="gallery__title">мост дьявола</h3>
+              <p class="gallery__text">Автор фото: Антон</p>
+            </div>
+
+            <div class="gallery__item-content-wrapper--2">
+              <svg src="../img/like-icon" width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" fill="#000"/></svg>
+              <span class="gallery__number">254</span>
+            </div>
+
           </div>
-          <span class="gallery__number">254</span>
         </li>
+
       </ul>
     </div>
   </section>
 
   <section class="gallery-video">
-    <h2 class="gallery-video__title">Все еще сомневаетесь?</h2>
-    <p class="gallery-video__text">Смотрите видеопрезентацию и <br> скорее за билетами, пока они не <br> подорожали в очередной раз!</p>
-    <img class="gallery-video__prev" src="img/footer-back.jpg" width="280" height="177" alt="превью видео трассы в седоне.">
+    <div class="gallery-video__wrapper">
+      <h2 class="gallery-video__title">Все еще сомневаетесь?</h2>
+      <p class="gallery-video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+    </div>
+      <img class="gallery-video__prev" src="img/footer-back.jpg" width="280" height="177" alt="превью видео трассы в седоне.">
   </section>
 </main>
 
@@ -160,6 +207,6 @@
 
   </div>
 </footer>
-
+<script src="js/script.js"></script>
 </body>
 </html>
