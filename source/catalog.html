@@ -66,7 +66,11 @@
 
         <li class="gallery__item">
           <a href="#">
-            <img class="gallery__img--1" src="img/photo-1.jpg" width="280" height="280" alt="вид на дорогу в седоне.">
+            <picture>
+              <source media="(min-width: 1200px)" width="1200" height="400" srcset="img/photo-1-desktop.jpg  1x, photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" width="648" height="400" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+              <img class="gallery__img--1" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="вид на дорогу в седоне.">
+            </picture>
           </a>
 
           <div class="gallery__item-wrapper">
