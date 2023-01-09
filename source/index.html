@@ -19,7 +19,9 @@
       <div class="main-header__wrapper">
 
         <a class="main-header__logo">
-          <img class="main-header__logo-img" src="img/header-logo.svg" width="185" height="96" alt="Логотип Седона.">
+          <!--<picture>-->
+            <img class="main-header__logo-img" src="img/header-logo.svg" width="185" height="96" alt="Логотип Седона.">
+          <!--</picture>-->
         </a>
 
         <nav class="main-nav main-nav--opened main-nav--nojs">
@@ -50,7 +52,13 @@
 
         <section class="hero">
           <h2 class="visually-hidden">добро пожаловать в седону</h2>
-          <img class="hero__img" src="img/back-text-mob.png" width="282" height="214" alt="welcome to the gorgeous sedona! because the grand canyon sucks!">
+
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/back-text-desktop.png 1x, img/back-text-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/back-text-tablet.png 1x, img/back-text-tablet@2x.png 2x">
+            <img class="hero__img" src="img/back-text-mobile.png" width="282" height="214" alt="welcome to the gorgeous sedona! because the grand canyon sucks!">
+          </picture>
+
         </section>
 
         <section class="hero-description">

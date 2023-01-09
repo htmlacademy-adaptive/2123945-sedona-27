@@ -10,9 +10,13 @@
 
   @media (min-width: @tablet-width) {
     min-height: 518px;
-    background-image: none;
     padding: 0;
     background-image: url("../img/back-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet@2x.jpg");
+      background-size: 768px auto;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -20,6 +24,11 @@
     background-image: none;
     padding: 0;
     background-image: url("../img/back-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.jpg");
+      background-size: cover;
+    }
   }
 }
 
