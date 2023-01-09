@@ -7,6 +7,9 @@
   outline-offset: -5px;
   position: relative;
   background-color: #81b3d2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @media (min-width: @tablet-width) {
     min-height: 518px;
@@ -21,12 +24,11 @@
 
   @media (min-width: @desktop-width) {
     min-height: 518px;
-    background-image: none;
     padding: 0;
     background-image: url("../img/back-desktop.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/back-desktop@2x.jpg");
+      //background-image: url("../img/back-desktop@2x.jpg");
       background-size: cover;
     }
   }
@@ -62,7 +64,7 @@
 .hero__img {
   max-width: 100%;
   height: auto;
-  object-fit: cover;
-  object-position: 100px;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
