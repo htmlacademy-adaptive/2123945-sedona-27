@@ -51,6 +51,7 @@
 .gallery-video__container {
   width: 280px;
   position: relative;
+  max-width: 100%;
 
   @media (min-width: @tablet-width) {
     width: 648px;
@@ -61,9 +62,16 @@
   }
 }
 
-.gallery-video__container::before {
+.gallery-video__button {
+  border: none;
+  cursor: pointer;
+  background-color: none;
+  position: relative;
+}
+
+.gallery-video__button:before {
   content: "";
-  background-image: url("../img/polygon.svg");
+  background-image: url("../img/polygon1.svg");
   background-repeat: no-repeat;
   width: 48px;
   height: 54px;

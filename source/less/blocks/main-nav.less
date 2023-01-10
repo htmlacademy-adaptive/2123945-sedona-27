@@ -48,7 +48,7 @@
     background-color: #ffffff;
     color: #000000;
     font-size: 14px;
-    line-height: 21px;
+    line-height: 2px;
     font-weight: 700;
 
     &--active {
@@ -106,7 +106,8 @@
   }
 }
 
-/* Бургерное меню - верхняя палочка*/
+/* Бургерное меню - верхняя палочка
+остальные две палочки внизу - тенями**/
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
@@ -118,12 +119,12 @@
   box-shadow: 0 7px 0 0 #81b3d2, 0 14px 0 0 #81b3d2;
 }
 
-/*остальные две палочки внизу - тенями*/
+/*Состояние :active*/
 .main-nav--closed .main-nav__toggle:active::before {
-  background-color: fade(#ffffff, 30%);
+  background-color: fade(#81b3d2, 30%);
   box-shadow:
-    0 5px 0 0 fade(#ffffff, 30%),
-    0 10px 0 0 fade(#ffffff, 30%);
+    0 7px 0 0 fade(#81b3d2, 30%),
+    0 14px 0 0 fade(#81b3d2, 30%);
 }
 
 @media (max-width: @mobile-width-only) {
