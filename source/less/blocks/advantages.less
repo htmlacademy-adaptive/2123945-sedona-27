@@ -133,12 +133,30 @@
   background-image: url("../img/advantages-house.svg");
   background-repeat: no-repeat;
   background-position: 0 15px;
+
+    @media (min-width: @tablet-width) {
+    background-image: url("../img/advantages-house-big.svg");
+    background-position: 0 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/advantages-house-big.svg");
+  }
 }
 
 .advantages__item--food {
   background-image: url("../img/advantages-food.svg");
   background-repeat: no-repeat;
   background-position: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/advantages-food-big.svg");
+    background-position: 0 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/advantages-food-big.svg");
+  }
 }
 
 .advantages__item--souvenirs {
@@ -146,6 +164,15 @@
   background-repeat: no-repeat;
   padding-bottom: 46px;
   background-position: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/advantages-souvenirs-big.svg");
+    background-position: 0 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/advantages-souvenirs-big.svg");
+  }
 }
 
 .advantages__item--icon .advantages__item__content-wrapper {
@@ -252,6 +279,9 @@
     width: @tablet-width;
     padding: 0;
     margin: 0;
+    min-height: 330px;
+    justify-content: center;
+    align-items: center;
   }
 
   @media (min-width: @desktop-width) {
