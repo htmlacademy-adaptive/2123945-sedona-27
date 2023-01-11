@@ -47,7 +47,13 @@
   <div class="hero-catalog__wrapper">
     <section class="hero-catalog">
         <h2 class="visually-hidden">добро пожаловать в седону</h2>
-        <img class="hero-catalog__img" src="img/back-text.png" width="229" height="39" alt="welcome to the gorgeous sedona! because the grand canyon sucks!">
+
+        <picture>
+          <source media="(min-width: 1200px)" width="459" height="79"srcset="img/back-text-inner-desktop.png 1x, img/back-text-inner-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" width="456" height="77" srcset="img/back-text-inner-tablet.png 1x, img/back-text-inner-tablet@2x.png 2x">
+          <img class="hero-catalog__img" src="img/back-text-inner-mobile.png" srcset="img/back-text-inner-mobile@2x.png 2x" width="229" height="39" alt="Sedona">
+        </picture>
+
     </section>
   </div>
 
@@ -66,7 +72,11 @@
 
         <li class="gallery__item">
           <a href="#">
-            <img class="gallery__img--1" src="img/photo-1.jpg" width="280" height="280" alt="вид на дорогу в седоне.">
+            <picture>
+              <source media="(min-width: 1200px)" width="1200" height="400" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" width="648" height="400" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+              <img class="gallery__img--1" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="вид на дорогу в седоне.">
+            </picture>
           </a>
 
           <div class="gallery__item-wrapper">
@@ -87,7 +97,11 @@
 
         <li class="gallery__item">
           <a href="#">
-            <img class="gallery__img--2" src="img/photo-2.jpg" width="280" height="280" alt="вид на растения в седоне.">
+            <picture>
+              <source media="(min-width: 1200px)" width="400" height="267" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" width="324" height="267" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+              <img class="gallery__img--2" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" width="280" height="280" alt="вид на растения в седоне.">
+            </picture>
           </a>
 
           <div class="gallery__item-wrapper">
@@ -107,7 +121,11 @@
 
         <li class="gallery__item">
           <a href="#">
-            <img class="gallery__img--3" src="img/photo-3.jpg" width="280" height="280" alt="вид на дорогу в седоне.">
+            <picture>
+              <source media="(min-width: 1200px)" width="400" height="267" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" width="324" height="267" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+              <img class="gallery__img--3" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="вид на дорогу в седоне.">
+            </picture>
           </a>
 
           <div class="gallery__item-wrapper">
@@ -127,7 +145,11 @@
 
         <li class="gallery__item">
           <a href="#">
-            <img class="gallery__img--4" src="img/photo-4.jpg" width="280" height="280" alt="вид на дорогу в седоне.">
+            <picture>
+              <source media="(min-width: 1200px)" width="400" height="267" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" width="324" height="267" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+              <img class="gallery__img--4" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" width="280" height="280" alt="вид на мост дьявола.">
+            </picture>
           </a>
 
           <div class="gallery__item-wrapper">
@@ -150,11 +172,20 @@
   </section>
 
   <section class="gallery-video">
+
     <div class="gallery-video__wrapper">
       <h2 class="gallery-video__title">Все еще сомневаетесь?</h2>
       <p class="gallery-video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
     </div>
-      <img class="gallery-video__prev" src="img/footer-back.jpg" width="280" height="177" alt="превью видео трассы в седоне.">
+
+    <div class="gallery-video video">
+      <button class="gallery-video__button">
+        <span class="visually-hidden">Воспроизвести</span>
+        <video class="gallery-video__container" width="280" poster="img/video-mobile.jpg"></video>
+      </button>
+
+    </div>
+
   </section>
 </main>
 

@@ -23,7 +23,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("../img/back-mobile-catalog.jpg");
+  background-image: url("../img/back-inner-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 37px;
@@ -32,11 +32,23 @@
   @media (min-width: @tablet-width) {
     min-height: 290px;
     margin: 0 auto;
+    background-image: url("../img/back-inner-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-inner-tablet@2x.jpg");
+      background-size: 768px auto;
+    }
   }
 
   @media (min-width: @desktop-width) {
     min-height: 301px;
     margin: 0 auto;
+    background-image: url("../img/back-inner-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-inner-desktop@2x.jpg");
+      background-size: cover;
+    }
   }
 }
 
