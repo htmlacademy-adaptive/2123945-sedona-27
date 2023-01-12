@@ -19,6 +19,18 @@
   }
 }
 
+.gallery-video::before {
+  content: "";
+  background-image: url("../img/polygon1.svg");
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 54px;
+  position: absolute;
+  top: 210px;
+  left: 116px;
+  z-index: 2;
+}
+
 .gallery-video__wrapper {
   width: 266px;
   display: flex;
@@ -67,15 +79,4 @@
   border: none;
   cursor: pointer;
   background-color: none;
-}
-
-.gallery-video::before {
-  content: "";
-  background-image: url("../img/polygon1.svg");
-  background-repeat: no-repeat;
-  width: 48px;
-  height: 54px;
-  position: absolute;
-  top: 332px;
-  left: 0;
 }
