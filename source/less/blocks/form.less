@@ -238,6 +238,45 @@
   background-color: rgba(213, 213, 213, 1);
 }
 
+.form__form-impression .form__title {
+  position: relative;
+}
+
+.form__form-impression .form__title::before {
+  @media (min-width: @tablet-width) {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: -30px;
+    width: 123px;
+    height: 1px;
+    background-color: rgba(219, 219, 219, 1);
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 280px;
+    left: 0;
+  }
+}
+
+.form__form-impression .form__title::after {
+  @media (min-width: @tablet-width) {
+    content: "";
+    position: absolute;
+    top: 14px;
+    right: -30px;
+    width: 123px;
+    height: 1px;
+    background-color: rgba(219, 219, 219, 1);
+  }
+
+
+  @media (min-width: @desktop-width) {
+    width: 280px;
+    right: 0;
+  }
+}
+
 /*Посещенные достопримечательности*/
 .form__form-attractions {
   display: flex;
@@ -245,6 +284,7 @@
   margin-bottom: 49px;
   outline: 5px solid rgba(41, 18, 248, 0.8);
   outline-offset: -5px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     width: 480px;
@@ -278,6 +318,41 @@
   background-repeat: no-repeat;
 }
 
+.form__form-attractions .form__title::before {
+  @media (min-width: @tablet-width) {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: -79px;
+    width: 123px;
+    height: 1px;
+    background-color: rgba(219, 219, 219, 1);
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 280px;
+    left: 0;
+  }
+}
+
+.form__form-attractions .form__title::after {
+  @media (min-width: @tablet-width) {
+    content: "";
+    position: absolute;
+    top: 26px;
+    right: -79px;
+    width: 123px;
+    height: 1px;
+    background-color: rgba(219, 219, 219, 1);
+  }
+
+
+  @media (min-width: @desktop-width) {
+    width: 280px;
+    right: 0;
+  }
+}
+
 /*.control-input[type="radio"]:checked + .control-mark::before {
     position: absolute;
     top: 17px;
@@ -304,6 +379,7 @@
   margin-bottom: 56px;
   outline: 5px solid rgba(255, 0, 162, 0.8);
   outline-offset: -5px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     width: 648px;
@@ -356,8 +432,44 @@
   }
 }
 
+.form__form-emotions .form__title::before {
+  @media (min-width: @tablet-width) {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 0;
+    width: 123px;
+    height: 1px;
+    background-color: rgba(219, 219, 219, 1);
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 280px;
+    left: 0;
+  }
+}
+
+.form__form-emotions .form__title::after {
+  @media (min-width: @tablet-width) {
+    content: "";
+    position: absolute;
+    top: 26px;
+    right: 0;
+    width: 123px;
+    height: 1px;
+    background-color: rgba(219, 219, 219, 1);
+  }
+
+
+  @media (min-width: @desktop-width) {
+    width: 280px;
+    right: 0;
+  }
+}
+
+
 .form__title {
-  font-size: 18px;
+  font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   text-align: center;
