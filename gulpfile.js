@@ -79,7 +79,7 @@ return gulp.src('source/img/icons/*.svg')
 inlineSvg: true
 }))
 .pipe(rename('sprite.svg'))
-.pipe(gulp.dest('build/img'));
+.pipe(gulp.dest('build/img/icons'));
 }
 
 // Copy
