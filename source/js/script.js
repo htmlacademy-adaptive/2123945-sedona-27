@@ -27,7 +27,6 @@ closeButtonSuccess.addEventListener('click', function () {
   modalContainerSuccess.classList.remove('modal-container--open');
 });
 
-
 //let modalContainerFailure = document.querySelector('.modal-container--failure');
 //let closeButtonFailure = document.querySelector('.button--failure');
 
@@ -40,4 +39,3 @@ closeButtonSuccess.addEventListener('click', function () {
 //closeButtonFailure.addEventListener('click', function () {
 //  modalContainerFailure.classList.remove('modal-container--open');
 //});
-
