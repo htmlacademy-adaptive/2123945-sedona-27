@@ -58,7 +58,6 @@
 
   @media (min-width: @tablet-width) {
     position: relative;
-    min-height: 347px;
     margin: 0;
     padding: 0;
     outline: 5px solid rgba(255, 0, 204, 0.8);
@@ -66,19 +65,6 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-  }
-
-  @media (min-width: @desktop-width) {
-    &::before {
-      position: absolute;
-      content: "";
-      left: 0;
-      top: 0;
-      width: 400px;
-      height: 80px;
-      background-color: #000000;
-      opacity: 0.3;
-    }
   }
 }
 
@@ -132,6 +118,10 @@
   }
 }
 
+.gallery__item--link {
+  position: relative;
+}
+
 .gallery__title {
   margin: 0;
   padding: 0;
@@ -148,8 +138,6 @@
 }
 
 .gallery__item-wrapper {
-  min-height: 95px;
-  min-width: 280px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -163,38 +151,56 @@
     padding: 0;
     background-color: #f2f2f2;
   }
-}
-
-.gallery__item-wrapper:first-child {
-  min-height: 95px;
-  min-width: 280px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 0 auto;
-  position: relative;
-
-  @media (min-width: @tablet-width) {
-    min-width: 648px;
-  }
 
   @media (min-width: @desktop-width) {
-    &::before {
-      position: absolute;
-      content: "";
-      left: 0;
-      top: 0;
-      width: 400px;
-      height: 80px;
-      background-color: #000000;
-      opacity: 0.3;
-    }
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: rgba(255, 255, 255, 1);
+    bottom: 0;
+    width: 400px;
+  }
+}
+
+//.gallery__item-wrapper:first-child {
+//  min-height: 95px;
+//  min-width: 280px;
+//  display: flex;
+//  flex-direction: column;
+//  justify-content: space-between;
+//  margin: 0 auto;
+//  position: relative;
+
+//  @media (min-width: @tablet-width) {
+//    min-width: 648px;
+//  }
+
+//  @media (min-width: @desktop-width) {
+//    &::before {
+//      position: absolute;
+//      content: "";
+//      left: 0;
+//      top: 0;
+//      height: 80px;
+//      background-color: #000000;
+//      opacity: 0.3;
+//      width: 1200px;
+//    }
+//  }
+//}
+
+.gallery__item:first-child .gallery__item-wrapper {
+  @media (min-width: @desktop-width) {
+    min-width: 1200px;
   }
 }
 
 .gallery__item:last-child .gallery__item-wrapper {
   @media (min-width: @tablet-width) {
     max-width: 324px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 400px;
   }
 }
 
