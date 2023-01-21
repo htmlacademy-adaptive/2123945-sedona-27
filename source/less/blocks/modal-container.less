@@ -17,7 +17,7 @@
   .modal-container--success__wrapper {
     width: 320px;
     background-color: #ffffff;
-    padding: 39px 39px 50px 37px;
+    padding: 45px 42px 28px 41px;
     text-align: center;
     box-sizing: border-box;
 
@@ -53,7 +53,7 @@
     @media (min-width: @tablet-width) {
       min-width: 640px;
     }
-}
+  }
 
   .modal__close-button {
     width: 272px;
@@ -68,11 +68,67 @@
 }
 
 .modal-container--failure {
-  position: fixed;
-  top: 30px;
-  left: 50px;
-  min-width: 320px;
-  //min-height: 280px;
-  background-color: rgba(255, 255, 255, 1);
-  display: none;
+  top: 0;
+  left: 0;
+
+  .modal-container--failure__wrapper {
+    width: 320px;
+    background-color: #ffffff;
+    padding: 45px 42px 28px 41px;
+    text-align: center;
+    box-sizing: border-box;
+
+    @media (min-width: @tablet-width) {
+      min-width: 400px;
+      padding: 54px 47px 29px 46px;
+    }
+
+    @media (min-width: @desktop-width) {
+      max-width: 400px;
+      padding: 48px 47px 23px 46px;
+    }
+  }
+
+  .modal__title {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 36px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+
+  .modal__title br {
+    display: none;
+  }
+
+  .modal__close-button__wrapper {
+    background-color: #ffffff;
+    min-width: 320px;
+
+    @media (min-width: @tablet-width) {
+      min-width: 400px;
+    }
+  }
+
+  .modal__close-button {
+    width: 180px;
+    height: 58px;
+    margin: 20px;
+    margin-top: 0;
+    margin-left: 70px;
+
+    @media (min-width: @tablet-width) {
+      width: 272px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 49px;
+    }
+  }
 }
