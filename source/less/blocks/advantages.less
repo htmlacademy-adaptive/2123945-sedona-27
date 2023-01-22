@@ -79,6 +79,12 @@
     font-weight: 700;
     color: rgba(255, 255, 255, 1);
     padding-bottom: 11px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 21px;
+      width: 190px;
+      margin: 0 auto;
+    }
   }
 
   .advantages__number {
@@ -97,6 +103,10 @@
     color: rgba(255, 255, 255, 1);
     padding: 17px 21px;
     padding-bottom: 0;
+
+    @media (min-width: @tablet-width) {
+      padding: 21px 21px 0;
+    }
   }
 }
 
@@ -109,7 +119,6 @@
 
   .advantages__item--icon:last-child {
     padding-bottom: 46px;
-  }
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -123,11 +132,16 @@
     max-width: 400px;
     padding-top: 25px;
   }
+}
 
   .advantages__title {
     font-size: 18px;
     line-height: 26px;
     font-weight: 700;
+
+    @media (min-width: @tablet-width) {
+      font-size: 21px;
+    }
   }
 
   .advantages__text {
