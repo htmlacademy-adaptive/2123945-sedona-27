@@ -203,14 +203,13 @@
 .control {
   position: relative;
   display: block;
-  padding: 10px 10px 0 54px;
-  margin-right: 15px;
+  padding: 20px 15px 0 50px;
 }
 
 .control-mark {
   position: absolute;
-  top: 2px;
-  left: -7px;
+  top: 9px;
+  left: -12px;
   width: 46px;
   height: 46px;
   background-color: rgba(242, 242, 242, 1);
@@ -224,10 +223,10 @@
 
 .control-input[type="radio"]:checked + .control-mark::before {
   position: absolute;
-  top: 17px;
-  left: 17px;
-  width: 10px;
-  height: 10px;
+  top: 14px;
+  left: 15px;
+  width: 16px;
+  height: 16px;
   background-color: rgba(51, 51, 51, 1);
   border-radius: 50%;
   content: "";
@@ -314,8 +313,8 @@
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
   position: absolute;
-  top: 17px;
-  left: 17px;
+  top: 25px;
+  left: 12px;
   width: 22px;
   height: 16px;
   content: "";
@@ -408,7 +407,7 @@
   font-weight: 700;
   line-height: 26px;
   border: none;
-  margin-bottom: 48px;
+  margin-bottom: 26px;
 
   @media (min-width: @desktop-width) {
     width: 768px;
@@ -472,15 +471,17 @@
   }
 }
 
-
 .form__title {
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   text-align: center;
-  padding: 0;
+  padding: 0 0 5px;
   margin: 0;
-  padding-bottom: 28px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .form__form-attractions .form__title {
