@@ -114,7 +114,6 @@
 .advantages__item--icon {
   text-align: start;
   background-color: rgba(255, 255, 255, 1);
-  padding-left: 48px;
   padding-top: 32px;
 
   .advantages__item--icon:last-child {
@@ -148,7 +147,7 @@
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
-    padding-top: 16px;
+    padding-top: 23px;
   }
 }
 
@@ -156,10 +155,12 @@
   background-image: url("../img/advantages-house.svg");
   background-repeat: no-repeat;
   background-position: 0 22px;
+  padding-left: 49px;
 
   @media (min-width: @tablet-width) {
     background-image: url("../img/advantages-house-big.svg");
-    background-position: 52px 69px;
+    background-position: 66px 65px;
+    padding-left: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -172,10 +173,12 @@
   background-image: url("../img/advantages-food.svg");
   background-repeat: no-repeat;
   background-position: 0 25px;
+  padding-left: 49px;
 
   @media (min-width: @tablet-width) {
     background-image: url("../img/advantages-food-big.svg");
-    background-position: 52px 69px;
+    background-position: 61px 64px;
+    padding-left: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -189,10 +192,12 @@
   background-repeat: no-repeat;
   padding-bottom: 46px;
   background-position: 3px 25px;
+  padding-left: 49px;
 
   @media (min-width: @tablet-width) {
     background-image: url("../img/advantages-souvenirs-big.svg");
-    background-position: 52px 69px;
+    background-position: 68px 63px;
+    padding-left: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -201,11 +206,22 @@
   }
 }
 
+.tablet-br {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+  display: block;
+  }
+}
+
 .advantages__item--icon .advantages__item__content-wrapper {
   @media (min-width: @tablet-width) {
     flex-grow: 1;
-    max-width: 190px;
-    padding-top: 157px;
+    width: 190px;
+    padding-top: 126px;
+    text-align: center;
+    padding-right: 71px;
+    padding-left: 6px;
   }
 
   @media (min-width: @desktop-width) {
@@ -217,12 +233,14 @@
 .advantages__wrapper--line-3 .advantages__item--color-blue {
   background-color: rgba(129, 179, 210, 1);
   max-width: 320px;
-  padding-top: 39px;
+  padding-top: 17px;
   padding-bottom: 40px;
   color: #ffffff;
 
   @media (min-width: @tablet-width) {
     max-width: 256px;
+    flex-grow: 1;;
+    order: 2;
   }
 
   @media (min-width: @desktop-width) {
@@ -236,6 +254,13 @@
     font-weight: 700;
     color: rgba(255, 255, 255, 1);
     padding-bottom: 11px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 21px;
+      width: 150px;
+      margin: 0 auto;
+      padding-top: 37px;
+    }
   }
 
   .advantages__number {
@@ -306,6 +331,10 @@
     font-weight: 700;
     color: #000000;
     padding-bottom: 9px;
+
+    @media (min-width: @tablet-width) {
+    font-size: 21px;
+    }
   }
 
   .advantages__number {
@@ -323,12 +352,17 @@
     color: #000000;
     padding-top: 14px;
     padding-bottom: 51px;
-  }
+
+    @media (min-width: @tablet-width) {
+      padding-top: 28px;
+    }
+   }
 
   .advantages__item__content-wrapper {
     @media (min-width: @tablet-width) {
-      min-width: 190px;
+      width: 190px;
       margin: 0 auto;
+      padding-top: 54px;
     }
 
     @media (min-width: @desktop-width) {
@@ -364,6 +398,10 @@
     font-weight: 700;
     color: #000000;
     padding-bottom: 9px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 21px;
+      }
   }
 
   .advantages__number {
@@ -385,8 +423,9 @@
 
   .advantages__item__content-wrapper {
     @media (min-width: @tablet-width) {
-      min-width: 190px;
+      width: 159px;
       margin: 0 auto;
+      padding-top: 49px;
     }
 
     @media (min-width: @desktop-width) {
@@ -414,6 +453,7 @@
   .advantages__item__content-wrapper {
     width: 244px;
     margin: 0 auto;
+    padding-top: 54px;
   }
 
   .advantages__title {
@@ -422,6 +462,10 @@
     font-weight: 700;
     color: #000000;
     padding-bottom: 9px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 21px;
+      }
   }
 
   .advantages__number {
@@ -529,9 +573,7 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
-    width: @tablet-width;
     min-height: 330px;
-    justify-content: space-evenly;
   }
 
   @media (min-width: @desktop-width) {
