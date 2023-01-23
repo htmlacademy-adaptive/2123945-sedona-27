@@ -27,6 +27,7 @@
   outline: 5px solid rgba(34, 0, 255, 0.8);
   outline-offset: -5px;
   margin-bottom: 64px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     flex-grow: 1;
@@ -49,6 +50,15 @@
 }
 
 .form__form-name::after {
+  width: 1px;
+  height: 331px;
+  background-color: #e5e5e5;
+  content: "";
+  position: absolute;
+  top: -188px;
+  left: 131px;
+  transform: rotate(90deg);
+
   @media (min-width: @tablet-width) {
     width: 1px;
     height: 338px;
@@ -77,6 +87,7 @@
   outline: 5px solid rgba(191, 255, 0, 0.8);
   outline-offset: -5px;
   margin-bottom: 59px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     flex-grow: 1;
@@ -87,6 +98,17 @@
   @media (min-width: @desktop-width) {
     width: 402px;
   }
+}
+
+.form__form-contacts::after {
+  width: 1px;
+  height: 331px;
+  background-color: #e5e5e5;
+  content: "";
+  position: absolute;
+  top: -188px;
+  left: 131px;
+  transform: rotate(90deg);
 }
 
 .form-phone__wrapper .field {
@@ -152,6 +174,7 @@
   margin-bottom: 49px;
   outline: 5px solid rgba(209, 70, 10, 0.8);
   outline-offset: -5px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     width: 575px;
@@ -242,20 +265,15 @@
   background-color: rgba(213, 213, 213, 1);
 }
 
-.form__form-impression .form__title {
-  position: relative;
-}
-
-.form__form-impression .form__title::before {
-  @media (min-width: @tablet-width) {
-    content: "";
-    position: absolute;
-    top: 14px;
-    left: -30px;
-    width: 123px;
-    height: 1px;
-    background-color: rgba(219, 219, 219, 1);
-  }
+.form__form-impression::after {
+  width: 1px;
+  height: 331px;
+  background-color: #e5e5e5;
+  content: "";
+  position: absolute;
+  top: -188px;
+  left: 131px;
+  transform: rotate(90deg);
 
   @media (min-width: @desktop-width) {
     width: 280px;
@@ -273,7 +291,6 @@
     height: 1px;
     background-color: rgba(219, 219, 219, 1);
   }
-
 
   @media (min-width: @desktop-width) {
     width: 280px;
@@ -339,7 +356,16 @@
   }
 }
 
-.form__form-attractions .form__title::after {
+.form__form-attractions::after {
+  width: 1px;
+  height: 331px;
+  background-color: #e5e5e5;
+  content: "";
+  position: absolute;
+  top: -188px;
+  left: 131px;
+  transform: rotate(90deg);
+
   @media (min-width: @tablet-width) {
     content: "";
     position: absolute;
@@ -349,7 +375,6 @@
     height: 1px;
     background-color: rgba(219, 219, 219, 1);
   }
-
 
   @media (min-width: @desktop-width) {
     width: 280px;
@@ -380,7 +405,7 @@
 .form__form-emotions {
   display: flex;
   flex-direction: column;
-  margin-bottom: 56px;
+  margin-bottom: 26px;
   outline: 5px solid rgba(255, 0, 162, 0.8);
   outline-offset: -5px;
   position: relative;
@@ -397,8 +422,19 @@
   }
 }
 
+.form__form-emotions::after {
+  width: 1px;
+  height: 331px;
+  background-color: #e5e5e5;
+  content: "";
+  position: absolute;
+  top: -188px;
+  left: 131px;
+  transform: rotate(90deg);
+}
+
 .form__form-emotions textarea {
-  min-height: 160px;
+  min-height: 125px;
   background-color: rgba(242, 242, 242, 1);
   color: rgba(0, 0, 0, 0.3);
   padding: 16px;
@@ -407,7 +443,7 @@
   font-weight: 700;
   line-height: 26px;
   border: none;
-  margin-bottom: 26px;
+  margin-bottom: 49px;
 
   @media (min-width: @desktop-width) {
     width: 768px;
@@ -420,6 +456,8 @@
 .form-emotions__text {
   color: rgba(51, 51, 51, 0.6);
   padding-top: 24px;
+  margin-left: 142px;
+  font-size: 12px;
 }
 
 .form-emotions__wrapper {
@@ -451,6 +489,10 @@
     width: 280px;
     left: 0;
   }
+}
+
+.form__form-emotions .form__title {
+  padding-bottom: 20px;
 }
 
 .form__form-emotions .form__title::after {
