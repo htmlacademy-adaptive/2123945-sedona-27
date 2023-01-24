@@ -255,19 +255,7 @@
   </div>
 </footer>
 
-<div class="modal-container">
-
-  <div class="modal-container--failure">
-    <div class="modal-container--failure__wrapper">
-      <h2 class="modal__title">что-то пошло <br>не так!</h2>
-      <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы <br> забыли их заполнить</p>
-    </div>
-    <div class="modal__close-button__wrapper">
-      <button class="button modal__close-button button--failure" type="button">Ок
-        <span class="visually-hidden">Ок</span>
-      </button>
-    </div>
-  </div>
+<div class="modal-container modal-container--open">
 
   <div class="modal-container--success">
     <div class="modal-container--success__wrapper">
@@ -279,6 +267,18 @@
           <span class="visually-hidden">Закрыть окно</span>
         </button>
       </div>
+  </div>
+
+  <div class="modal-container--failure">
+    <div class="modal-container--failure__wrapper">
+      <h2 class="modal__title">что-то пошло <br class="br-modal-title-fail">не так!</h2>
+      <p class="modal__text">Проверьте поля, выделенные <br class="br-modal-text-fail"> красным, скорее всего вы <br class="br-modal-text-fail"> забыли их заполнить</p>
+    </div>
+    <div class="modal__close-button__wrapper">
+      <button class="button modal__close-button button--failure" type="button">Ок
+        <span class="visually-hidden">Ок</span>
+      </button>
+    </div>
   </div>
 
 </div>
