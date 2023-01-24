@@ -51,10 +51,49 @@
   padding-bottom: 25px;
   font-size: 21px;
   line-height: 26px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 26px;
+    padding-bottom: 34px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
 
 .hero-catalog-description__text {
+  @media (min-width: @tablet-width) {
+    padding-bottom: 10px;
+  }
+
   @media (min-width: @desktop-width) {
-    padding-bottom: 67px;
+    padding-bottom: 92px;
+  }
+}
+
+.desktop-br {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.gallery__item__icon {
+  @media (min-width: @tablet-width) {
+    fill: rgba(0, 0, 0, 1);
+    opacity: 0.3;
+  }
+
+  @media (min-width: @desktop-width) {
+    fill: #ffffff;
+    opacity: 1;
   }
 }
