@@ -1,5 +1,10 @@
 .modal-container {
-  min-width: 320px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #ffffff;
 }
 
 .modal-container--open {
@@ -9,54 +14,156 @@
   width: 100%;
   height: 100%;
   position: fixed;
-  //top: 0;
-  //bottom: 0;
-  //right: 0;
-  //left: 0;
-  overflow: hidden;
-  overflow-y: auto;
-  justify-content: center; /* см. ниже */
+  justify-content: center;
   align-items: center;
   z-index: 99;
-  /* Чтобы окно не прилипало к границе
-  браузера установим отступы */
-  padding: 30px 0;
-}
-
-.modal-container__wrapper {
-  padding: 54px 47px 29px 46px;
-}
-
-.modal__title {
-  font-size: 30px;
-  line-height: 40px;
-  font-weight: 700;
-  text-align: center;
-  margin: 0;
-  padding-bottom: 36px;
-}
-
-
-.modal-container--failure {
-  //position: fixed;
-  top: 30px;
-  left: 50px;
-  min-width: 320px;
-  //min-height: 280px;
-  background-color: rgba(255, 255, 255, 1);
 }
 
 .modal-container--success {
-  //position: fixed;
   top: 0;
   left: 0;
-  min-width: 320px;
-  //min-height: 323px;
-  background-color: rgba(255, 255, 255, 1);
+  display: block;
+
+  .modal-container--success__wrapper {
+    width: 320px;
+    background-color: #ffffff;
+    padding: 45px 42px 28px 41px;
+    text-align: center;
+    box-sizing: border-box;
+
+    @media (min-width: @tablet-width) {
+      min-width: 640px;
+      padding: 57px 99px;
+    }
+
+    @media (min-width: @desktop-width) {
+      max-width: 640px;
+      padding: 55px 99px 32px 97px;
+    }
+  }
+
+  .modal__title {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 36px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 30px;
+      line-height: 26px;
+    }
+  }
+
+  .modal__close-button__wrapper {
+    background-color: rgba(242, 242, 242, 1);
+    min-width: 320px;
+
+    @media (min-width: @tablet-width) {
+      min-width: 640px;
+    }
+  }
+
+  .modal__close-button {
+    width: 272px;
+    height: 58px;
+    margin: 20px;
+
+    @media (min-width: @tablet-width) {
+      margin: 44px 91px;
+      width: 458px;
+    }
+  }
 }
 
-.modal__close-button {
-  width: 272px;
-  height: 58px;
-  margin: 0;
+.modal-container--failure {
+  top: 0;
+  left: 0;
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    width: 400px;
+    margin-bottom: 49px;
+  }
+
+  .modal-container--failure__wrapper {
+    background-color: #ffffff;
+    padding: 45px 42px 28px 41px;
+    text-align: center;
+    box-sizing: border-box;
+
+    @media (min-width: @tablet-width) {
+      min-width: 400px;
+      padding: 54px 47px 29px 46px;
+    }
+
+    @media (min-width: @desktop-width) {
+      max-width: 400px;
+      padding: 48px 47px 23px 46px;
+    }
+  }
+
+  .modal__title {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 36px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+
+  .br-modal-title-fail {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: block;
+    }
+  }
+
+  .br-modal-text-fail {
+    display: block;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
+  }
+
+  .modal__close-button__wrapper {
+    background-color: #ffffff;
+    min-width: 320px;
+
+    @media (min-width: @tablet-width) {
+      min-width: 400px;
+      padding-bottom: 20px;
+    }
+  }
+
+  .modal__close-button {
+    width: 180px;
+    height: 58px;
+    margin-bottom: 35px;
+
+    @media (min-width: @tablet-width) {
+      width: 272px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 49px;
+      margin-left: 64px;
+    }
+  }
 }
