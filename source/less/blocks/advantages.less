@@ -175,6 +175,10 @@
     padding-top: 169px;
     width: 400px;
   }
+
+  .advantages__text {
+    padding-right: 31px;
+  }
 }
 
 .advantages__item--food {
@@ -215,9 +219,19 @@
     padding-top: 170px;
     width: 400px;
   }
+
+  .advantages__text {
+    padding-right: 10px;
+
+    @media (min-width: @desktop-width) {
+      padding-right: 10px;
+    }
+  }
 }
 
 .advantages__item--icon .advantages__item__content-wrapper {
+  padding-left: 47px;
+
   @media (min-width: @tablet-width) {
     text-align: center;
     width: 190px;
@@ -317,17 +331,19 @@
 }
 
 /*НА СЕРОМ ФОНЕ*/
-.advantages__item--with-color-grey:nth-child(1) {
+.advantages__item--with-color-grey {
   background-color: #eeeeee;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex-grow: 1;
   position: relative;
 
   @media (min-width: @tablet-width) {
-    min-width: 256px;
-    min-height: 256px;
+    width: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
   }
 
   .advantages__title {
@@ -337,7 +353,6 @@
     line-height: 26px;
     font-weight: 700;
     color: #000000;
-    padding-bottom: 9px;
 
     @media (min-width: @tablet-width) {
       font-size: 21px;
@@ -346,12 +361,38 @@
 
   .advantages__number {
     margin: 0;
-    padding: 0;
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
     color: #000000;
-    padding-top: 20px;
+    position: relative;
+    padding-top: 26px;
+    padding-bottom: 26px;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 24px;
+      padding-bottom: 33px;
+    }
+
+    &::before {
+      position: absolute;
+      background-color: rgba(51, 51, 51, 1);
+      content: "";
+      width: 11px;
+      height: 1px;
+      top: 28px;
+      left: 26px;
+    }
+
+    &::after {
+      position: absolute;
+      background-color: rgba(51, 51, 51, 1);
+      content: "";
+      width: 11px;
+      height: 1px;
+      top: 28px;
+      left: -16px;
+    }
   }
 
   .advantages__text {
@@ -361,167 +402,21 @@
     line-height: 21px;
     font-weight: 400;
     color: #000000;
-    padding-top: 14px;
-    padding-bottom: 51px;
-
-    @media (min-width: @tablet-width) {
-      padding-top: 28px;
-    }
   }
 
   .advantages__item__content-wrapper {
     @media (min-width: @tablet-width) {
       width: 190px;
       margin: 0 auto;
-      padding-top: 54px;
+      padding: 55px 33px;
     }
 
     @media (min-width: @desktop-width) {
       margin: 0 auto;
-      padding-top: 52px;
-      width: 153px;
+      padding: 52px 50px;
+      width: 300px;
     }
   }
-}
-
-.advantages__item--with-color-grey:nth-child(2) {
-  background-color: #eeeeee;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-grow: 1;
-  position: relative;
-  padding-top: 0;
-
-  @media (min-width: @tablet-width) {
-    min-width: 256px;
-    min-height: 256px;
-  }
-
-  .advantages__title {
-    margin: 0;
-    padding: 0;
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 700;
-    color: #000000;
-    padding-bottom: 9px;
-
-    @media (min-width: @tablet-width) {
-      font-size: 21px;
-    }
-  }
-
-  .advantages__number {
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 400;
-    color: #000000;
-    padding-top: 20px;
-  }
-
-  .advantages__text {
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 400;
-    color: #000000;
-    padding-top: 14px;
-    padding-bottom: 51px;
-  }
-
-  .advantages__item__content-wrapper {
-    @media (min-width: @tablet-width) {
-      width: 159px;
-      margin: 0 auto;
-      padding-top: 49px;
-    }
-
-    @media (min-width: @desktop-width) {
-      margin: 0 auto;
-      padding-top: 52px;
-      width: 153px;
-    }
-  }
-}
-
-.advantages__item--with-color-grey:nth-child(3) {
-  background-color: #eeeeee;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-grow: 1;
-  position: relative;
-  padding-top: 0;
-
-  @media (min-width: @tablet-width) {
-    min-width: 256px;
-    min-height: 256px;
-  }
-
-  .advantages__item__content-wrapper {
-    @media (min-width: @tablet-width) {
-      width: 244px;
-      margin: 0 auto;
-      padding-top: 54px;
-    }
-  }
-
-  .advantages__title {
-    margin: 0;
-    padding: 0;
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 700;
-    color: #000000;
-    padding-bottom: 9px;
-
-    @media (min-width: @tablet-width) {
-      font-size: 21px;
-    }
-  }
-
-  .advantages__number {
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 400;
-    color: #000000;
-    padding-top: 20px;
-  }
-
-  .advantages__text {
-    padding: 0;
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 400;
-    color: #000000;
-    width: 247px;
-    padding-top: 21px;
-    padding-bottom: 30px;
-    margin: 0 auto;
-
-    @media (min-width: @tablet-width) {
-      width: 190px;
-    }
-  }
-
-  //.advantages__item__content-wrapper {
-  //  @media (min-width: @tablet-width) {
-  //    min-width: 190px;
-  //    margin: 0 auto;
-  //  }
-
-  //  @media (min-width: @desktop-width) {
-  //    margin: 0 auto;
-  //    padding-top: 52px;
-  //    width: 153px;
-  //  }
-  //}
 }
 
 .advantages__item--with-color-grey:not(:first-child)::before {
@@ -542,35 +437,10 @@
   }
 }
 
-.advantages__item--with-color-grey .advantages__number {
-  position: relative;
-  margin: 0;
-  padding: 0;
-}
-
-.advantages__item--with-color-grey .advantages__number::before {
-  position: absolute;
-  background-color: rgba(51, 51, 51, 1);
-  content: "";
-  width: 11px;
-  height: 1px;
-  top: 28px;
-  left: 26px;
-}
-
-.advantages__item--with-color-grey .advantages__number::after {
-  position: absolute;
-  background-color: rgba(51, 51, 51, 1);
-  content: "";
-  width: 11px;
-  height: 1px;
-  top: 28px;
-  left: -16px;
-}
-
-
 .advantages__wrapper--line-1 {
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -589,11 +459,12 @@
 .advantages__wrapper--line-2 {
   margin: 0 auto;
   color: #000000;
+  display: flex;
+  flex-wrap: wrap;
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
-    min-height: 330px;
   }
 
   @media (min-width: @desktop-width) {
@@ -605,6 +476,8 @@
 
 .advantages__wrapper--line-3 {
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -622,6 +495,8 @@
 
 .advantages__wrapper--line-4 {
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 
   @media (min-width: @tablet-width) {
     display: flex;
