@@ -82,27 +82,12 @@
 .gallery-video__button {
   border: none;
   cursor: pointer;
-  background-color: none;
+  background-color: transparent;
+  position: absolute;
+  top: 61%;
+  left: 40%;
 }
 
-.gallery-video::before {
-  content: "";
-  background-image: url("../img/polygon1.svg");
-  background-repeat: no-repeat;
-  width: 48px;
-  height: 54px;
-  position: absolute;
-  top: 210px;
-  left: 116px;
-  z-index: 3;
-
-  @media (min-width: @tablet-width) {
-    top: 404px;
-    left: 320px;
-  }
-
-  @media (min-width: @desktop-width) {
-    top: 404px;
-    left: 375px;
-  }
+.gallery-video__button:active {
+  opacity: 0.3;
 }
