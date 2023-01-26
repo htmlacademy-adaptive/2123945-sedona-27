@@ -50,6 +50,16 @@
   height: auto;
   flex-grow: 1;
   object-fit: cover;
+
+  @media (min-width: @tablet-width) {
+    width: 512px;
+    height: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
+    height: 256px;
+  }
 }
 
 /*С ГОЛУБЫМ ФОНОМ*/
@@ -406,15 +416,21 @@
 
   .advantages__item__content-wrapper {
     @media (min-width: @tablet-width) {
-      width: 190px;
       margin: 0 auto;
-      padding: 55px 33px;
+
     }
 
     @media (min-width: @desktop-width) {
       margin: 0 auto;
       padding: 52px 50px;
       width: 300px;
+    }
+  }
+
+  .advantages__item__content-wrapper--1 {
+    @media (min-width: @tablet-width) {
+      width: 190px;
+      padding: 55px 33px;
     }
   }
 }
@@ -446,7 +462,6 @@
     display: flex;
     flex-direction: row;
     width: @tablet-width;
-    max-height: 256px;
   }
 
   @media (min-width: @desktop-width) {
@@ -483,7 +498,6 @@
     display: flex;
     flex-direction: row;
     width: @tablet-width;
-    max-height: 256px;
   }
 
   @media (min-width: @desktop-width) {
