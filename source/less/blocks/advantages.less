@@ -26,7 +26,7 @@
       margin: 0 auto;
     }
 
-    &--line-1 {
+    .advantages__wrapper--line-1 {
       margin: 0 auto;
       display: flex;
       flex-wrap: wrap;
@@ -44,7 +44,41 @@
       }
     }
 
-    &--line-2 {
+    .advantages__wrapper--line-2 {
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+
+      @media (min-width: @tablet-width) {
+        display: flex;
+        flex-direction: row;
+      }
+
+      @media (min-width: @desktop-width) {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+
+    .advantages__wrapper--line-3 {
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+
+      @media (min-width: @tablet-width) {
+        display: flex;
+        flex-direction: row;
+        width: @tablet-width;
+      }
+
+      @media (min-width: @desktop-width) {
+        display: flex;
+        flex-direction: row;
+        width: @desktop-width;
+      }
+    }
+
+    .advantages__wrapper--line-4 {
       margin: 0 auto;
       display: flex;
       flex-wrap: wrap;
@@ -262,23 +296,6 @@
   }
 }
 
-.advantages__wrapper--line-3 {
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-
-  @media (min-width: @tablet-width) {
-    display: flex;
-    flex-direction: row;
-    width: @tablet-width;
-  }
-
-  @media (min-width: @desktop-width) {
-    display: flex;
-    flex-direction: row;
-    width: @desktop-width;
-  }
-}
 
 .advantages__wrapper--line-3 .advantages__item--color-blue {
   background-color: rgba(129, 179, 210, 1);
@@ -362,21 +379,7 @@
   left: 8px;
 }
 
-.advantages__wrapper--line-4 {
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
 
-  @media (min-width: @tablet-width) {
-    display: flex;
-    flex-direction: row;
-  }
-
-  @media (min-width: @desktop-width) {
-    display: flex;
-    flex-direction: row;
-  }
-}
 
 /*НА СЕРОМ ФОНЕ*/
 .advantages__item--with-color-grey {
