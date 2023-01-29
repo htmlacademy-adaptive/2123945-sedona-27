@@ -53,29 +53,29 @@
   }
 }
 
-  .advantages__wrapper {
-    min-width: 284px;
+.advantages__wrapper {
+  min-width: 284px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    min-width: 768px;
     margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .advantages__wrapper--line-1 {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
 
     @media (min-width: @tablet-width) {
-      min-width: 768px;
-      margin: 0 auto;
+      flex-direction: row;
+      width: @tablet-width;
     }
-
-    @media (min-width: @desktop-width) {
-      min-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .advantages__wrapper--line-1 {
-      margin: 0 auto;
-      display: flex;
-      flex-wrap: wrap;
-
-      @media (min-width: @tablet-width) {
-        flex-direction: row;
-        width: @tablet-width;
-      }
 
       @media (min-width: @desktop-width) {
         flex-direction: row;
@@ -248,7 +248,6 @@
     }
   }
 
-
   .advantages__item--content-wrapper-food {
     @media (min-width: @tablet-width) {
       padding: 148px 33px 61px 33px;
@@ -272,7 +271,6 @@
       margin: 0 auto;
     }
   }
-
 
   .advantages__text {
     margin: 0;
@@ -415,57 +413,47 @@
     width: 400px;
   }
 
-  .advantages__title {
-    margin: 0;
-    padding: 0;
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 700;
-    color: #000000;
-
-    @media (min-width: @tablet-width) {
-      font-size: 21px;
-    }
-  }
-
   .advantages__number {
-    margin: 0;
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 400;
-    color: #000000;
     position: relative;
-    padding-top: 26px;
-    padding-bottom: 26px;
 
     @media (min-width: @tablet-width) {
-      padding-top: 11px;
-      padding-bottom: 21px;
+      padding-top: 9px;
+      padding-bottom: 33px;
     }
 
-    //&::before {
-    //  position: absolute;
-    //  background-color: rgba(51, 51, 51, 1);
-    //  content: "";
-    //  width: 11px;
-    //  height: 1px;
-    //  top: 34px;
-    //  left: 114px;
-    //}
-
-    //&::after {
-    //  position: absolute;
-    //  background-color: rgba(51, 51, 51, 1);
-    //  content: "";
-    //  width: 11px;
-    //  height: 1px;
-    //  top: 34px;
-    //  left: 59px;
-    //}
-
-    @media (min-width: @desktop-width) {
-      top: 23px;
+    &::before {
+      position: absolute;
+      background-color: rgba(51, 51, 51, 1);
+      content: "";
+      width: 11px;
+      height: 1px;
+      top: 34px;
       left: 114px;
+
+      @media (min-width: @tablet-width) {
+        top: 19px;
+        left: 110px;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      background-color: rgba(51, 51, 51, 1);
+      content: "";
+      width: 11px;
+      height: 1px;
+      top: 34px;
+      left: 59px;
+
+      @media (min-width: @tablet-width) {
+        top: 20px;
+        left: 60px;
+      }
+
+      @media (min-width: @desktop-width) {
+        top: 23px;
+        left: 114px;
+      }
     }
   }
 
@@ -478,18 +466,17 @@
     color: #000000;
   }
 
-  .advantages__item--content-wrapper-1 {
+  .advantages__item--content-wrapper-square {
     @media (min-width: @tablet-width) {
-      padding: 55px 33px;
+      padding: 43px 33px;
     }
 
     @media (min-width: @desktop-width) {
       padding: 63px 50px 41px 50px;
     }
   }
-}
 
-.advantages__item--content-wrapper-1 br {
+.advantages__item--content-wrapper-square br {
   display: none;
 
   @media (min-width: @tablet-width) {
@@ -501,10 +488,10 @@
   }
 }
 
-.advantages__item--content-wrapper-2 {
+.advantages__item--content-wrapper-road {
   @media (min-width: @tablet-width) {
     width: 173px;
-    padding: 41px 33px;
+    padding: 31px 33px;
   }
 
   @media (min-width: @desktop-width) {
@@ -513,10 +500,23 @@
   }
 }
 
-.advantages__item--content-wrapper-3 {
+.advantages__item--content-wrapper-road br {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+
+.advantages__item--content-wrapper-tourists {
   @media (min-width: @tablet-width) {
     width: 190px;
-    padding: 52px 33px;
+    padding: 45px 33px;
   }
 
   @media (min-width: @desktop-width) {
@@ -525,7 +525,7 @@
   }
 }
 
-.advantages__item--content-wrapper-3 br {
+.advantages__item--content-wrapper-tourists br {
   display: none;
 
   @media (min-width: @tablet-width) {
@@ -552,6 +552,7 @@
 
   @media (min-width: @desktop-width) {
     display: none;
+    }
   }
 }
 
