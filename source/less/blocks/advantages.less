@@ -41,7 +41,7 @@
     line-height: 21px;
     font-weight: 400;
     color: #000000;
-    position: relative
+    position: relative;
   }
 
   .advantages__text {
@@ -130,7 +130,6 @@
     }
   }
 
-
   /*С ГОЛУБЫМ ФОНОМ*/
 .advantages__item--color-blue {
   background-color: rgba(129, 179, 210, 1);
@@ -145,6 +144,12 @@
     max-width: 400px;
     margin-left: auto;
   }
+
+    .advantages__item--color-blue:nth-child(2) {
+      @media (min-width: @tablet-width) {
+      order: 3;
+      }
+    }
 }
 
 .advantages__item--content-wrapper-city {
@@ -231,23 +236,9 @@
     }
   }
 
-  .advantages__item--content-wrapper-1 {
+  .advantages__item--content-wrapper-house {
     @media (min-width: @tablet-width) {
-      padding: 158px 33px 60px 33px;
-      padding-top: 0;
-      text-align: center;
-    }
-
-    @media (min-width: @desktop-width) {
-      padding: 63px 50px 41px 50px;
-    }
-  }
-
-  .advantages__item--content-wrapper-2 {
-    @media (min-width: @tablet-width) {
-      width: 173px;
-      padding: 156px 33px 61px 33px;
-      padding-top: 0;
+      padding: 120px 33px 61px 33px;
       text-align: center;
     }
 
@@ -257,11 +248,10 @@
     }
   }
 
-  .advantages__item--content-wrapper-3 {
+
+  .advantages__item--content-wrapper-food {
     @media (min-width: @tablet-width) {
-      width: 190px;
-      padding: 158px 33px 60px 33px;
-      padding-top: 0;
+      padding: 148px 33px 61px 33px;
       text-align: center;
     }
 
@@ -270,6 +260,19 @@
       margin: 0 auto;
     }
   }
+
+  .advantages__item--content-wrapper-souvenirs {
+    @media (min-width: @tablet-width) {
+      padding: 147px 33px 61px 33px;
+      text-align: center;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 52px 50px 51px 50px;
+      margin: 0 auto;
+    }
+  }
+
 
   .advantages__text {
     margin: 0;
@@ -291,8 +294,7 @@
 
     @media (min-width: @tablet-width) {
       background-image: url("../img/advantages-house-big.svg");
-      background-position: 84px 65px;
-      width: 256px;
+      background-position: 87px 61px;
       padding-top: 33px;
     }
 
@@ -310,8 +312,7 @@
 
     @media (min-width: @tablet-width) {
       background-image: url("../img/advantages-food-big.svg");
-      background-position: 84px 65px;
-      width: 256px;
+      background-position: 86px 62px;
     }
 
     @media (min-width: @desktop-width) {
@@ -329,9 +330,7 @@
 
     @media (min-width: @tablet-width) {
       background-image: url("../img/advantages-souvenirs-big.svg");
-      background-position: 84px 65px;
-      padding-top: 158px;
-      width: 256px;
+      background-position: 96px 65px;
     }
 
     @media (min-width: @desktop-width) {
