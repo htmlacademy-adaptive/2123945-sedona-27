@@ -12,63 +12,63 @@
     flex-direction: column;
     width: @desktop-width;
   }
+}
 
-  .search__wrapper {
-    text-align: center;
-    width: 262px;
-    margin: 0 auto;
+.search__wrapper {
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 110px;
+
+  @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    min-height: 110px;
-
-    @media (min-width: @tablet-width) {
-      display: flex;
-      flex-direction: column;
-      width: 435px;
-      min-height: 101px;
-      margin-top: 61px;
-      margin-bottom: 40px;
-    }
-
-    @media (min-width: @desktop-width) {
-      display: flex;
-      flex-direction: column;
-      width: 458px;
-    }
+    width: 435px;
+    min-height: 101px;
+    margin-top: 61px;
+    margin-bottom: 40px;
   }
 
-  .search__title {
-    margin: 0;
-    padding: 0;
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
+    width: 458px;
+  }
+}
+
+.search__title {
+  margin: 0;
+  padding: 0;
+}
+
+.search__text {
+  width: 283px;
+  padding-top: 20px;
+}
+
+.search__button {
+  width: 284px;
+  padding: 20px 49px;
+  box-sizing: border-box;
+  align-items: center;
+  display: block;
+  margin-top: 28px;
+  margin-left: -11px;
+  margin-bottom: 48px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    width: 458px;
+    margin: 0 auto;
+    text-align: center;
   }
 
-  .search__text {
-    width: 283px;
-  }
-
-  .search__button {
-    width: 284px;
-    padding: 20px 49px;
-    box-sizing: border-box;
-    align-items: center;
-    display: block;
-    margin-top: 18px;
-    margin-left: -11px;
-    margin-bottom: 56px;
-
-    @media (min-width: @tablet-width) {
-      display: flex;
-      flex-direction: column;
-      width: 458px;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    @media (min-width: @desktop-width) {
-      display: flex;
-      flex-direction: column;
-      width: 458px;
-    }
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
+    width: 458px;
   }
 }
