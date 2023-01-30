@@ -11,252 +11,216 @@
   <body class="page_body">
     <div class="shadow">
       <div class="box-shadow">
+        <header class="main-header">
+          <div class="main-header__wrapper">
+            <a class="main-header__logo" href="index.html">
+              <img class="main-header__logo-img" src="img/header-logo.svg" width="185" height="96" alt="Логотип Седона.">
+            </a>
+            <nav class="main-nav main-nav--opened main-nav--nojs">
+              <button class="main-nav__toggle" type="button">
+                <span class="visually-hidden">Открыть меню</span>
+              </button>
+              <ul class="main-nav__list">
+                <li class="main-nav__item"><a href="index.html">главная</a></li>
+                <li class="main-nav__item  main-nav__item--active"><a>фото и видео</a></li>
+                <li class="main-nav__item"><a href="form.html">форма отзыва</a></li>
+                <li class="main-nav__item"><a href="#">html academy</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
 
-    <header class="main-header">
-      <div class="main-header__wrapper">
-        <a class="main-header__logo" href="index.html">
-          <img class="main-header__logo-img" src="img/header-logo.svg" width="185" height="96" alt="Логотип Седона.">
-        </a>
-        <nav class="main-nav main-nav--opened main-nav--nojs">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="index.html">главная</a></li>
-            <li class="main-nav__item  main-nav__item--active"><a>фото и видео</a></li>
-            <li class="main-nav__item"><a href="form.html">форма отзыва</a></li>
-            <li class="main-nav__item"><a href="#">html academy</a></li>
-          </ul>
-        </nav>
+    <!--MAIN-->
+    <main class="catalog-container">
+      <h1 class="visually-hidden">седона: каталог</h1>
+        <section class="hero-catalog">
+          <div class="hero-catalog__wrapper">
+            <h2 class="visually-hidden">добро пожаловать в седону</h2>
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/back-text-inner-desktop.webp 1x, img/back-text-inner-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/back-text-inner-tablet.webp 1x, img/back-text-inner-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/back-text-inner-mobile.webp 1x, img/back-text-inner-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/back-text-inner-desktop.png 1x, img/back-text-inner-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/back-text-inner-tablet.png 1x, img/back-text-inner-tablet@2x.png 2x">
+              <img class="hero-catalog__img" src="img/back-text-inner-mobile.png" srcset="img/back-text-inner-mobile@2x.png 2x" alt="Sedona">
+            </picture>
+          </div>
+        </section>
+
+      <div class="hero-catalog-description__wrapper">
+        <section class="hero-catalog-description">
+          <h2 class="hero-catalog-description__title">фото и видео</h2>
+          <p class="hero-catalog-description__text">не можете решиться на путешествие из-за курса? фотографии&nbsp;помогут вам забыть о политике и экономике.</p>
+        </section>
       </div>
-    </header>
 
-<!--MAIN-->
-<main class="catalog-container">
-  <h1 class="visually-hidden">седона: каталог</h1>
-    <section class="hero-catalog">
-      <div class="hero-catalog__wrapper">
-        <h2 class="visually-hidden">добро пожаловать в седону</h2>
+        <section class="gallery">
+          <h2 class="visually-hidden">галерея фотографий</h2>
+          <div class="gallery__wrapper">
+            <ul class="gallery__list">
+              <li class="gallery__item">
+                <a class="gallery__item--link" href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-1-tablet.webp 1x, img/photo-1-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-1-mobile.webp 1x, img/photo-1-mobile@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                    <img class="gallery__img--1" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="вид на дорогу в седоне.">
+                  </picture>
+                </a>
+                <div class="gallery__item-wrapper">
+                  <div class="gallery__item-content-wrapper--1">
+                    <h3 class="gallery__title">неродные просторы</h3>
+                    <p class="gallery__text">Автор фото: Бориc</p>
+                  </div>
+                  <div class="gallery__item-content-wrapper--2">
+                    <svg src="../img/like-icon.svg" width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" fill="#000"/></svg>
+                    <span class="gallery__number">1350</span>
+                  </div>
+                </div>
+              </li>
+              <li class="gallery__item">
+                <a href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-2-desktop.webp 1x, img/photo-2-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-2-tablet.webp 1x, img/photo-2-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-2-mobile.webp 1x, img/photo-2-mobile@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                    <img class="gallery__img--2" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="вид на растения в седоне.">
+                  </picture>
+                </a>
+                <div class="gallery__item-wrapper">
+                  <div class="gallery__item-content-wrapper--1">
+                    <h3 class="gallery__title">местная растительность</h3>
+                    <p class="gallery__text">Автор фото: Сергей</p>
+                  </div>
+                  <div class="gallery__item-content-wrapper--2">
+                    <svg class="gallery__item__icon" fill="none" src="../img/like-icon" width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="1" d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" fill="#000" /></svg>
+                    <span class="gallery__number">143</span>
+                  </div>
+                </div>
+              </li>
+              <li class="gallery__item">
+                <a href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-3-desktop.webp 1x, img/photo-3-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-3-tablet.webp 1x, img/photo-3-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-3-mobile.webp 1x, img/photo-3-mobile@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                    <img class="gallery__img--3" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="вид на дорогу в седоне.">
+                  </picture>
+                </a>
+                <div class="gallery__item-wrapper">
+                  <div class="gallery__item-content-wrapper--1">
+                    <h3 class="gallery__title">дорога на север</h3>
+                    <p class="gallery__text">Автор фото: Петр</p>
+                  </div>
+                  <div class="gallery__item-content-wrapper--2">
+                    <svg src="../img/like-icon" width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" fill="#000"/></svg>
+                    <span class="gallery__number">96</span>
+                  </div>
+                </div>
+              </li>
+              <li class="gallery__item">
+                <a href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-4-desktop.webp 1x, img/photo-4-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-4-tablet.webp 1x, img/photo-4-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-4-mobile.webp 1x, img/photo-4-mobile@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+                    <img class="gallery__img--4" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="вид на мост дьявола.">
+                  </picture>
+                </a>
+                <div class="gallery__item-wrapper">
+                  <div class="gallery__item-content-wrapper--1">
+                    <h3 class="gallery__title">мост дьявола</h3>
+                    <p class="gallery__text">Автор фото: Антон</p>
+                  </div>
+                  <div class="gallery__item-content-wrapper--2">
+                    <svg src="../img/like-icon" width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" fill="#000"/></svg>
+                    <span class="gallery__number">254</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
 
-        <picture>
-          <source type="image/webp" media="(min-width: 1200px)" srcset="img/back-text-inner-desktop.webp 1x, img/back-text-inner-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/back-text-inner-tablet.webp 1x, img/back-text-inner-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/back-text-inner-mobile.webp 1x, img/back-text-inner-mobile@2x.webp 2x">
-          <source media="(min-width: 1200px)" srcset="img/back-text-inner-desktop.png 1x, img/back-text-inner-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/back-text-inner-tablet.png 1x, img/back-text-inner-tablet@2x.png 2x">
-          <img class="hero-catalog__img" src="img/back-text-inner-mobile.png" srcset="img/back-text-inner-mobile@2x.png 2x" alt="Sedona">
-        </picture>
+        <section class="gallery-video">
+          <div class="gallery-video__wrapper">
+            <h2 class="gallery-video__title">Все еще сомневаетесь?</h2>
+            <p class="gallery-video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          </div>
+          <a class="gallery-video__link" href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-desktop.webp 1x, img/video-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/video-mobile.webp 1x, img/video-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+              <img class="gallery-video__img" src="img/video-mobile" srcset="img/video-mobile@2x.jpg 2x" alt="видеопрезентация Седоны.">
+            </picture>
+          </a>
+            <button class="gallery-video__button">
+              <svg src="../img/video-play-button2" aria-label="Воспроизвести видео" width="48" height="54" viewBox="0 0 48 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M48 27L0 54L2.42273e-06 0L48 27Z" fill="white" fill-opacity="0.7"/>
+              </svg>
+            </button>
+      </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <h2 class="main-footer__title">#visitsedona</h2>
+
+        <section class="main-footer__social social">
+          <h3 class="visually-hidden">социальные сети</h3>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
+                <svg class="social__icon social__icon--vk" width="24" height="14">
+                  <use href="./img/sprite.svg#footer-vk"></use>
+                </svg>
+                  <span class="visually-hidden">вконтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                <svg class="social__icon social__icon--telegram" width="21" height="17">
+                  <use href="./img/sprite.svg#footer-telegram"></use>
+                </svg>
+                  <span class="visually-hidden">телеграм</span>              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <svg class="social__icon social__icon--youtube" width="20" height="14">
+                  <use href="./img/sprite.svg#footer-youtube"></use>
+                </svg>
+                  <span class="visually-hidden">ютуб</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="main-footer__copyright copyright">
+          <h3 class="visually-hidden">сайт разработан</h3>
+          <p class="copyright__text">разработано</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="copyright__icon" width="27" height="35">
+              <use href="./img/sprite.svg#footer-htmlacademy-logo"></use>
+            </svg>
+              <span class="visually-hidden">логотип html academy</span>
+            </a>
+        </section>
         </div>
-    </section>
-
-  <div class="hero-catalog-description__wrapper">
-  <section class="hero-catalog-description">
-    <h2 class="hero-catalog-description__title">фото и видео</h2>
-    <p class="hero-catalog-description__text">не можете решиться на путешествие из-за курса? фотографии&nbsp;помогут вам забыть о политике и экономике.</p>
-  </section>
-  </div>
-
-  <section class="gallery">
-    <h2 class="visually-hidden">галерея фотографий</h2>
-
-    <div class="gallery__wrapper">
-      <ul class="gallery__list">
-
-        <li class="gallery__item">
-          <a class="gallery__item--link" href="#">
-            <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-1-tablet.webp 1x, img/photo-1-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/photo-1-mobile.webp 1x, img/photo-1-mobile@2x.webp 2x">
-              <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
-              <img class="gallery__img--1" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="вид на дорогу в седоне.">
-            </picture>
-          </a>
-
-          <div class="gallery__item-wrapper">
-
-            <div class="gallery__item-content-wrapper--1">
-              <h3 class="gallery__title">неродные просторы</h3>
-              <p class="gallery__text">Автор фото: Бориc</p>
-            </div>
-
-            <div class="gallery__item-content-wrapper--2">
-              <svg src="../img/like-icon.svg" width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" fill="#000"/></svg>
-              <span class="gallery__number">1350</span>
-            </div>
-
-          </div>
-
-        </li>
-
-        <li class="gallery__item">
-          <a href="#">
-            <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-2-desktop.webp 1x, img/photo-2-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-2-tablet.webp 1x, img/photo-2-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/photo-2-mobile.webp 1x, img/photo-2-mobile@2x.webp 2x">
-              <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
-              <img class="gallery__img--2" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="вид на растения в седоне.">
-            </picture>
-          </a>
-
-          <div class="gallery__item-wrapper">
-
-            <div class="gallery__item-content-wrapper--1">
-              <h3 class="gallery__title">местная растительность</h3>
-              <p class="gallery__text">Автор фото: Сергей</p>
-            </div>
-
-            <div class="gallery__item-content-wrapper--2">
-              <svg class="gallery__item__icon" fill="none" src="../img/like-icon" width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="1" d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" fill="#000" /></svg>
-              <span class="gallery__number">143</span>
-            </div>
-
-          </div>
-        </li>
-
-        <li class="gallery__item">
-          <a href="#">
-            <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-3-desktop.webp 1x, img/photo-3-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-3-tablet.webp 1x, img/photo-3-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/photo-3-mobile.webp 1x, img/photo-3-mobile@2x.webp 2x">
-              <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
-              <img class="gallery__img--3" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="вид на дорогу в седоне.">
-            </picture>
-          </a>
-
-          <div class="gallery__item-wrapper">
-
-            <div class="gallery__item-content-wrapper--1">
-              <h3 class="gallery__title">дорога на север</h3>
-              <p class="gallery__text">Автор фото: Петр</p>
-            </div>
-
-            <div class="gallery__item-content-wrapper--2">
-              <svg src="../img/like-icon" width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" fill="#000"/></svg>
-              <span class="gallery__number">96</span>
-            </div>
-
-          </div>
-        </li>
-
-        <li class="gallery__item">
-          <a href="#">
-            <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-4-desktop.webp 1x, img/photo-4-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-4-tablet.webp 1x, img/photo-4-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/photo-4-mobile.webp 1x, img/photo-4-mobile@2x.webp 2x">
-              <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
-              <img class="gallery__img--4" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="вид на мост дьявола.">
-            </picture>
-          </a>
-
-          <div class="gallery__item-wrapper">
-
-            <div class="gallery__item-content-wrapper--1">
-              <h3 class="gallery__title">мост дьявола</h3>
-              <p class="gallery__text">Автор фото: Антон</p>
-            </div>
-
-            <div class="gallery__item-content-wrapper--2">
-              <svg src="../img/like-icon" width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" fill="#000"/></svg>
-              <span class="gallery__number">254</span>
-            </div>
-
-          </div>
-        </li>
-
-      </ul>
+      </footer>
+      <script rel="preload" src="js/script.js"></script>
+      </div>
     </div>
-  </section>
-
-  <section class="gallery-video">
-
-    <div class="gallery-video__wrapper">
-      <h2 class="gallery-video__title">Все еще сомневаетесь?</h2>
-      <p class="gallery-video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-    </div>
-
-    <a class="gallery-video__link" href="#">
-      <picture>
-        <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-desktop.webp 1x, img/video-desktop@2x.webp 2x">
-        <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
-        <source type="image/webp" srcset="img/video-mobile.webp 1x, img/video-mobile@2x.webp 2x">
-        <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
-        <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
-        <img class="gallery-video__img" src="img/video-mobile" srcset="img/video-mobile@2x.jpg 2x" alt="видеопрезентация Седоны.">
-      </picture>
-    </a>
-
-      <button class="gallery-video__button">
-        <svg src="../img/video-play-button2" aria-label="Воспроизвести видео" width="48" height="54" viewBox="0 0 48 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M48 27L0 54L2.42273e-06 0L48 27Z" fill="white" fill-opacity="0.7"/>
-        </svg>
-      </button>
-
-  </section>
-</main>
-
-<!--FOOTER-->
-<footer class="main-footer">
-  <div class="main-footer__wrapper">
-    <h2 class="main-footer__title">#visitsedona</h2>
-
-    <section class="main-footer__social social">
-      <h3 class="visually-hidden">социальные сети</h3>
-
-      <ul class="social__list">
-
-        <li class="social__item">
-          <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
-            <svg class="social__icon social__icon--vk" width="24" height="14">
-              <use href="./img/sprite.svg#footer-vk"></use>
-            </svg>
-              <span class="visually-hidden">вконтакте</span>
-          </a>
-        </li>
-
-        <li class="social__item">
-          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-            <svg class="social__icon social__icon--telegram" width="21" height="17">
-              <use href="./img/sprite.svg#footer-telegram"></use>
-            </svg>
-              <span class="visually-hidden">телеграм</span>
-          </a>
-        </li>
-
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-            <svg class="social__icon social__icon--youtube" width="20" height="14">
-              <use href="./img/sprite.svg#footer-youtube"></use>
-            </svg>
-              <span class="visually-hidden">ютуб</span>
-          </a>
-        </li>
-
-      </ul>
-    </section>
-
-    <section class="main-footer__copyright copyright">
-      <h3 class="visually-hidden">сайт разработан</h3>
-      <p class="copyright__text">разработано</p>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <svg class="copyright__icon" width="27" height="35">
-          <use href="./img/sprite.svg#footer-htmlacademy-logo"></use>
-        </svg>
-          <span class="visually-hidden">логотип html academy</span>
-        </a>
-    </section>
-
-  </div>
-</footer>
-<script rel="preload" src="js/script.js"></script>
-</div>
-</div>
 </body>
 </html>
