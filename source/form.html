@@ -8,7 +8,7 @@
     <title>HTML Academy: Седона</title>
   </head>
 
-  <body class="page_body">
+  <body>
     <div class="shadow">
       <div class="box-shadow">
         <header class="main-header">
@@ -42,20 +42,20 @@
                 <source type="image/webp" srcset="img/back-text-inner-mobile.webp 1x, img/back-text-inner-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/back-text-inner-desktop.png 1x, img/back-text-inner-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/back-text-inner-tablet.png 1x, img/back-text-inner-tablet@2x.png 2x">
-                <img class="hero-catalog__img" src="img/back-text-inner-mobile.png" srcset="img/back-text-inner-mobile@2x.png 2x" alt="Sedona">
+                <img class="hero-form__img" src="img/back-text-inner-mobile.png" srcset="img/back-text-inner-mobile@2x.png 2x" alt="Sedona">
               </picture>
           </section>
 
-          <div class="hero-form__wrapper">
+          <div class="wrapper-for-hero-form">
             <section class="hero-form-description">
               <h2 class="hero-form-description__title">оставьте свой отзыв</h2>
               <p class="hero-form-description__text">помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
             </section>
           </div>
 
-          <div class="form__wrapper">
+          <div class="wrapper-for-form">
               <h2 class="visually-hidden">Форма отзыва</h2>
-              <form class="form" method="post">
+              <form class="form form-phone form-name-contacts" method="post">
                 <div class="form-name-contacts__wrapper">
                   <section class="form__form-name">
                     <h2 class="form__title">представьтесь:</h2>
@@ -68,7 +68,7 @@
                     <input class="field" type="text" placeholder="Викторович" id="form-patronymic" name="patronymic">
                   </section>
 
-                  <section class="form__form-contacts">
+                  <section class="form__form-contacts form-email">
                     <h2 class="form__title">контактная информация:</h2>
                     <label class="form__label" for="form-phone">Контактный телефон*:</label>
                     <div class="form-phone__wrapper">
@@ -155,7 +155,7 @@
                     </fieldset>
                   </section>
 
-                  <section class="form__form-emotions">
+                  <section class="form-emotions form__form-emotions">
                     <h2 class="form__title">Опишите свои эмоции:</h2>
                     <textarea placeholder="Опишите подробно все свои восторги">
                     </textarea>
@@ -216,18 +216,17 @@
           </div>
         </footer>
 
-        <div class="modal-container">
+        <div class="modal-container modal">
           <div class="modal-container-success">
             <div class="modal-container-success__wrapper">
               <h2 class="modal__title">Ваш отзыв отправлен!</h2>
               <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+              <button class="button modal__close-button button--success" type="button">Закрыть окно
+                <span class="visually-hidden">Закрыть окно</span>
+              </button>
             </div>
-              <div class="modal__close-button__wrapper">
-                <button class="button modal__close-button button--success" type="button">Закрыть окно
-                  <span class="visually-hidden">Закрыть окно</span>
-                </button>
-              </div>
           </div>
+        </div>
 
           <div class="modal-container-failure">
             <div class="modal-container-failure__wrapper">
@@ -241,8 +240,8 @@
             </div>
           </div>
         </div>
-        <script rel="preload" src="js/script.js" as="script"></script>
-      </div>
+        <script src="js/script.js"></script>
     </div>
+  </div>
   </body>
 </html>
